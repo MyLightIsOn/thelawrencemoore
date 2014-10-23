@@ -1,0 +1,73 @@
+.home-tile {
+  width: 50%;
+  height: 50%;
+  float: left;
+  position: relative;
+  border: 1px solid #c0c0c0;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.icon {
+  width: 80px;
+  height: 80px;
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  border: solid 4px #c0c0c0;
+  border-radius: 40px;
+}
+.icon:after {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  content: '';
+}
+.about .icon:after {
+  background: url("../img/icons.png") -437px -2px;
+  background-size: 302px;
+}
+.code .icon:after {
+  background: url("../img/icons.png") -496px -2px;
+  background-size: 302px;
+}
+.design .icon:after {
+  background: url("../img/icons.png") -306px -2px;
+  background-size: 302px;
+}
+.contact .icon:after {
+  background: url("../img/icons.png") -374px -2px;
+  background-size: 302px;
+}
+@media (min-width: 800px) {
+  .icon {
+    width: 92px;
+    height: 92px;
+    border-radius: 46px;
+  }
+  .icon:after {
+    width: 63px;
+    height: 63px;
+    top: 10px;
+    left: 10px;
+  }
+  .about .icon:after {
+    background: url("../img/icons.png") -538px -2px;
+    background-size: 372px;
+  }
+  .code .icon:after {
+    background: url("../img/icons.png") -612px -2px;
+    background-size: 372px;
+  }
+  .design .icon:after {
+    background: url("../img/icons.png") -377px -3px;
+    background-size: 372px;
+  }
+  .contact .icon:after {
+    background: url("../img/icons.png") -461px -2px;
+    background-size: 372px;
+  }
+}

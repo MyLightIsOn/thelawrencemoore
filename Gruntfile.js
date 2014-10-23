@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 
     // Project configuration.
     grunt.initConfig({
-        clean: ["js/templates/templates.js", "css/main.css"],
+        clean: ["js/templates/templates.js"],
 
         handlebars: {
             compile: {
@@ -29,11 +29,10 @@ module.exports = function(grunt) {
             }
         },
 
-        'compile-handlebars': {
-            gottaGlobEmAll: {
-                template: "js/templates/*.hbs",
-                templateData: {},
-                output: "./**/*.html"
+        watch: {
+            templates: {
+                files: ['js/templates/*.hbs'],
+                tasks: ['handlebars']
             }
         }
     });
@@ -42,8 +41,8 @@ module.exports = function(grunt) {
     // These plugins provide necessary tasks.
     grunt.loadNpmTasks('grunt-contrib-handlebars');
     grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-compile-handlebars');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
     // By default, lint and run all tests.
-    grunt.registerTask('default', ['clean', 'handlebars', 'less']);
+    grunt.registerTask('default', ['clean', 'handlebars', 'watch']);
 };
