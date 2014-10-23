@@ -49,7 +49,7 @@ z-index
   left: 0;
 }
 .about .icon:after {
-  background: url("../img/icons.png") -437px -2px;
+  background: url("../img/icons.png") -135px -2px no-repeat;
   background-size: 302px;
 }
 .code {
@@ -57,7 +57,7 @@ z-index
   right: 0;
 }
 .code .icon:after {
-  background: url("../img/icons.png") -496px -2px;
+  background: url("../img/icons.png") -194px -2px no-repeat;
   background-size: 302px;
 }
 .design {
@@ -65,7 +65,7 @@ z-index
   left: 0;
 }
 .design .icon:after {
-  background: url("../img/icons.png") -306px -2px;
+  background: url("../img/icons.png") -4px -2px no-repeat;
   background-size: 302px;
 }
 .contact {
@@ -73,7 +73,7 @@ z-index
   right: 0;
 }
 .contact .icon:after {
-  background: url("../img/icons.png") -374px -2px;
+  background: url("../img/icons.png") -72px -2px no-repeat;
   background-size: 302px;
 }
 @media (min-width: 800px) {
@@ -89,19 +89,19 @@ z-index
     left: 10px;
   }
   .about .icon:after {
-    background: url("../img/icons.png") -538px -2px;
+    background: url("../img/icons.png") -166px -2px no-repeat;
     background-size: 372px;
   }
   .code .icon:after {
-    background: url("../img/icons.png") -612px -2px;
+    background: url("../img/icons.png") -240px -2px no-repeat;
     background-size: 372px;
   }
   .design .icon:after {
-    background: url("../img/icons.png") -377px -3px;
+    background: url("../img/icons.png") -5px -3px no-repeat;
     background-size: 372px;
   }
   .contact .icon:after {
-    background: url("../img/icons.png") -461px -2px;
+    background: url("../img/icons.png") -89px -2px no-repeat;
     background-size: 372px;
   }
 }

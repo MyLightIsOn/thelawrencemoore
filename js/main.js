@@ -1,7 +1,6 @@
 $(function(){
     var wrapper = $('#wrapper');
     var screen = $('body, html');
-    var i = 0;
 
     //Loads templates for homepage
     $(wrapper).append(JST.about);
@@ -18,11 +17,12 @@ $(function(){
     //Stores the content pages in a variable
     var contentPages = $('.content-page');
 
-    console.log(contentPages);
-
     //Expands the homepage tile when clicked after grabbing the screen dimensions
-    $('.home-tile').click(function(){
+    $('.home-tile').on('click',function(){
         var tileExpand = $(this).children('.tile-expand');
+        var i = 0;
+
+        tileExpand.addClass('expanded');
 
         $(tileExpand).css({
             zIndex: 100
@@ -40,7 +40,7 @@ $(function(){
                 if(($(contentPages[i]).attr('id').split('-')[0]) == selectedClassIsolate){
 
                     var activePage = contentPages[i];
-
+                    console.log(contentPages[i])
                     $(activePage).addClass('active-page');
                     $(activePage).css({
                         zIndex: 150
@@ -52,5 +52,30 @@ $(function(){
             }
         });
     });
+
+    $('.close-page').on('click', function(){
+        var expandedTile = $("#wrapper").find('.expanded');
+        var activeContentPage = $("#wrapper").find('.active-page');
+
+        $(activeContentPage).animate({
+            opacity: 0
+        }, function(){
+            $(this).css({
+                zIndex: -100
+            });
+
+            $(expandedTile).animate({
+                width: 100 + '%',
+                height: 100 + '%'
+            }, function(){
+                $(expandedTile).css({
+                    zIndex: 0
+                });
+            });
+
+            $(activeContentPage).removeClass('active-page');
+            $(expandedTile).removeClass('expanded');
+        });
+    })
 });
 

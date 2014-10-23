@@ -7,7 +7,7 @@ this["JST"]["about"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"ma
 
 
 this["JST"]["aboutPage"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<div class=\"content-page\" id=\"about-page\">\r\n  About\r\n</div>";
+  return "<div class=\"content-page\" id=\"about-page\">\r\n\r\n</div>";
   },"useData":true});
 
 
