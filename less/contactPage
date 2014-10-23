@@ -1,0 +1,5 @@
+@import url('variables.less');
+
+#contact-page {
+    background-color: @red;
+}
