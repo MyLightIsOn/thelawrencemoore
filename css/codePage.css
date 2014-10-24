@@ -10,3 +10,20 @@ z-index
 #code-page {
   background-color: #1a7287;
 }
+#code-page header {
+  background: url("../img/code_small.jpg") no-repeat center;
+  background-size: cover;
+}
+@media (min-width: 800px) {
+  #code-page header {
+    background: url("../img/code_large.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+#code-page .page-wrapper {
+  background: linear-gradient(to bottom, rgba(26, 114, 135, 0) 0%, #1a7287 44%);
+  background: -webkit-linear-gradient(top, rgba(26, 114, 135, 0) 0%, #1a7287 44%);
+}
+#code-page .page-content {
+  background-color: #1a7287;
+}

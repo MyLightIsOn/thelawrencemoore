@@ -10,3 +10,20 @@ z-index
 #contact-page {
   background-color: #db3a24;
 }
+#contact-page header {
+  background: url("../img/contact_small.jpg") no-repeat center;
+  background-size: cover;
+}
+@media (min-width: 800px) {
+  #contact-page header {
+    background: url("../img/contact_large.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+#contact-page .page-wrapper {
+  background: linear-gradient(to bottom, rgba(219, 58, 36, 0) 0%, #db3a24 44%);
+  background: -webkit-linear-gradient(top, rgba(219, 58, 36, 0) 0%, #db3a24 44%);
+}
+#contact-page .page-content {
+  background-color: #db3a24;
+}

@@ -10,3 +10,20 @@ z-index
 #about-page {
   background-color: #db7f24;
 }
+#about-page header {
+  background: url("../img/about_small.jpg") no-repeat center;
+  background-size: cover;
+}
+@media (min-width: 800px) {
+  #about-page header {
+    background: url("../img/about_large.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+#about-page .page-wrapper {
+  background: linear-gradient(to bottom, rgba(219, 127, 36, 0) 0%, #db7f24 44%);
+  background: -webkit-linear-gradient(top, rgba(219, 127, 36, 0) 0%, #db7f24 44%);
+}
+#about-page .page-content {
+  background-color: #db7f24;
+}

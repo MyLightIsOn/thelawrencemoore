@@ -12,6 +12,7 @@ body {
   box-sizing: border-box;
   height: 100%;
   width: 100%;
+  max-width: 100%;
 }
 *,
 *:before,
@@ -36,12 +37,48 @@ body {
   position: absolute;
   z-index: -100;
   opacity: 0;
+  overflow: hidden;
+}
+.content-page header {
+  padding: 30px 7% 20px;
+  height: 100%;
+}
+.content-page header h1 {
+  color: #ffffff;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+.content-page header h5 {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  right: 9%;
+}
+.content-page .page-content {
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+}
+.content-page .page-content p {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+}
+.content-page .page-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 150px;
+  opacity: 0;
 }
 footer {
   width: 100%;
   bottom: 5px;
   padding: 0 15px 0 5px;
-  position: absolute;
+  position: fixed;
   font-size: 10px;
   z-index: 200;
 }
@@ -56,9 +93,9 @@ footer .myJob {
   color: #c0c0c0;
 }
 footer .close-page {
-  position: fixed;
-  bottom: 10px;
-  right: 16px;
+  position: absolute;
+  right: 30px;
+  bottom: 9px;
   cursor: pointer;
   font-size: 20px;
 }
@@ -70,6 +107,16 @@ footer .close-page:before {
   left: -25px;
 }
 @media (min-width: 800px) {
+  .content-page header {
+    padding: 110px 12% 20px;
+  }
+  .content-page header h1 {
+    font-size: 70px;
+  }
+  .content-page header h5 {
+    font-size: 30px;
+    right: 15%;
+  }
   footer {
     display: block;
     font-size: 15px;
