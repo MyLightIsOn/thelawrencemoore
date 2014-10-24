@@ -27,3 +27,13 @@ z-index
 #about-page .page-content {
   background-color: #db7f24;
 }
+.about .tile-title {
+  top: 18px;
+  left: -25px;
+}
+@media (min-width: 800px) {
+  .about .tile-title {
+    left: -83px;
+    top: 62px;
+  }
+}

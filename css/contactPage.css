@@ -27,3 +27,13 @@ z-index
 #contact-page .page-content {
   background-color: #db3a24;
 }
+.contact .tile-title {
+  top: 29px;
+  left: -35px;
+}
+@media (min-width: 800px) {
+  .contact .tile-title {
+    left: -123px;
+    top: 99px;
+  }
+}

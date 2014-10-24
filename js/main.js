@@ -17,6 +17,49 @@ $(function(){
     //Stores the content pages in a variable
     var contentPages = $('.content-page');
 
+    //Homepage tile hover effects
+    $('.home-tile').hover(function(){
+        var color = {};
+
+        if($(this).hasClass('about')){
+            color = '#db7f24'
+        }
+
+        if($(this).hasClass('code')){
+            color = '#1a7287'
+        }
+
+        if($(this).hasClass('design')){
+            color = '#1ba33f'
+        }
+
+        if($(this).hasClass('contact')){
+            color = '#db3a24'
+        }
+
+        console.log(color);
+
+        var tileIcon = $(this).find('.icon');
+        var tileTitle = $(this).find('.tile-title');
+
+        $(tileIcon).stop().animate({
+            backgroundColor: color
+        });
+        $(tileTitle).stop().animate({
+            color: color
+        })
+    }, function(){
+        var tileIcon = $(this).find('.icon');
+        var tileTitle = $(this).find('.tile-title');
+
+        $(tileIcon).stop().animate({
+            backgroundColor: '#ffffff'
+        });
+        $(tileTitle).stop().animate({
+            color: '#dbdbdb'
+        });
+    });
+
     //Expands the homepage tile when clicked after grabbing the screen dimensions
     $('.home-tile').on('click',function(){
         var tileExpand = $(this).children('.tile-expand');
@@ -45,32 +88,43 @@ $(function(){
                     var headerBottom = $(activePage).find('.page-header h5');
                     var bottom = $(headerBottom).position().top+$(headerBottom).outerHeight(true);
 
+                    //Adds active page class to the selected page
                     $(activePage).addClass('active-page');
+
+                    //Makes the active page have a higher z-index
                     $(activePage).css({
                         zIndex: 150
                     });
+
+                    //After teh z-index goes up, the page fades in
                     $(activePage).animate({
                         opacity: 1
                     }, 300);
+
+                    //Allows the active page scroll
                     $(activePage).css({
                         overflow: 'visible'
                     });
 
-
+                    //Creates the scroll effect for the inner pages and fades it in
                     $(window).one('scroll', function(){
                         $(activePage).find('.page-wrapper').animate({
                             opacity: 1,
                             top: 0
                         });
 
+                        //Places the page text below the header quote author
                         $(pageContent).css({
                             top: bottom + 130
                         });
+
+                        //Page text moves up and fades in
                         $(pageContent).animate({
                             opacity: 1,
                             top: bottom + 60
                         });
 
+                        //Header text gets a higher z-index so it stays above the gradient
                         $(headerText).css({
                             zIndex: 100
                         });
@@ -92,11 +146,15 @@ $(function(){
         var headerText =  $(activeContentPage).find('.page-header h1');
         var headerBottom = $(activeContentPage).find('.page-header h5');
 
+
+        //Returns the scroll position back to the top of the page then calls returnState()
         $(screen).animate(
             { scrollTop: 0 }, 'fast', returnState()
         );
 
         function returnState(){
+
+            //Active pages faces out then gets it z-index returned to it's original state
             $(activeContentPage).animate({
                 opacity: 0
             }, function(){
@@ -104,6 +162,7 @@ $(function(){
                     zIndex: -100
                 });
 
+                //the expanded tile shrinks back to its original size and it's z-index is reset
                 $(expandedTile).animate({
                     width: 100 + '%',
                     height: 100 + '%'
@@ -113,17 +172,22 @@ $(function(){
                     });
                 });
 
+                //The active pages scroll functionality is removed
                 $(activeContentPage).css({
                     overflow: 'hidden'
                 });
 
+                //Inner page fades back out
                 $(pageWrapper).css({
                     opacity: 0
                 });
 
+                //Header text z-index reset
                 $(headerText, headerBottom).css({
                     zIndex: 0
                 });
+
+                //Class names removed from active and expanded elements
                 $(activeContentPage).removeClass('active-page');
                 $(expandedTile).removeClass('expanded');
             });

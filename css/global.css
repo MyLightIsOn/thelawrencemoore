@@ -74,6 +74,18 @@ body {
   top: 150px;
   opacity: 0;
 }
+.tile-title {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  color: #dbdbdb;
+  -webkit-transform: rotate(90deg);
+  /* Safari */
+  -moz-transform: rotate(90deg);
+  /* Firefox */
+  -ms-transform: rotate(90deg);
+  /* IE */
+}
 footer {
   width: 100%;
   bottom: 5px;
@@ -116,6 +128,10 @@ footer .close-page:before {
   .content-page header h5 {
     font-size: 30px;
     right: 15%;
+  }
+  .tile-title {
+    font-size: 70px;
+    top: 70px;
   }
   footer {
     display: block;

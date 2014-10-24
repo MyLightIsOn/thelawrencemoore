@@ -1,7 +1,7 @@
 this["JST"] = this["JST"] || {};
 
 this["JST"]["about"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<div class=\"home-tile about\">\r\n    <div class=\"tile-expand\">\r\n        <span class=\"icon\"></span>\r\n    </div>\r\n</div>";
+  return "<div class=\"home-tile about\">\r\n    <div class=\"tile-expand\">\r\n        <span class=\"tile-title archivo\">About</span>\r\n        <span class=\"icon\"></span>\r\n    </div>\r\n</div>";
   },"useData":true});
 
 
@@ -13,7 +13,7 @@ this["JST"]["aboutPage"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"]
 
 
 this["JST"]["code"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<div class=\"home-tile code\">\r\n    <div class=\"tile-expand\">\r\n        <span class=\"icon\"></span>\r\n    </div>\r\n</div>";
+  return "<div class=\"home-tile code\">\r\n    <div class=\"tile-expand\">\r\n        <span class=\"tile-title archivo\">Code</span>\r\n        <span class=\"icon\"></span>\r\n    </div>\r\n</div>";
   },"useData":true});
 
 
@@ -25,7 +25,7 @@ this["JST"]["codePage"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],
 
 
 this["JST"]["contact"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<div class=\"home-tile contact\">\r\n    <div class=\"tile-expand\">\r\n        <span class=\"icon\"></span>\r\n    </div>\r\n</div>";
+  return "<div class=\"home-tile contact\">\r\n    <div class=\"tile-expand\">\r\n        <span class=\"tile-title archivo\">Contact</span>\r\n        <span class=\"icon\"></span>\r\n    </div>\r\n</div>";
   },"useData":true});
 
 
@@ -37,7 +37,7 @@ this["JST"]["contactPage"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1
 
 
 this["JST"]["design"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-  return "<div class=\"home-tile design\">\r\n    <div class=\"tile-expand\">\r\n        <span class=\"icon\"></span>\r\n    </div>\r\n</div>";
+  return "<div class=\"home-tile design\">\r\n    <div class=\"tile-expand\">\r\n        <span class=\"tile-title archivo\">Design</span>\r\n        <span class=\"icon\"></span>\r\n    </div>\r\n</div>";
   },"useData":true});
 
 
