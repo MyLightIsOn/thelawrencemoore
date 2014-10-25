@@ -50,7 +50,7 @@ z-index
 }
 .about .icon:after {
   background: url("../img/icons.png") -135px -2px no-repeat;
-  background-size: 302px;
+  background-size: 751px;
 }
 .code {
   bottom: 0;
@@ -58,7 +58,7 @@ z-index
 }
 .code .icon:after {
   background: url("../img/icons.png") -194px -2px no-repeat;
-  background-size: 302px;
+  background-size: 751px;
 }
 .design {
   top: 0;
@@ -66,7 +66,7 @@ z-index
 }
 .design .icon:after {
   background: url("../img/icons.png") -4px -2px no-repeat;
-  background-size: 302px;
+  background-size: 751px;
 }
 .contact {
   bottom: 0;
@@ -74,7 +74,7 @@ z-index
 }
 .contact .icon:after {
   background: url("../img/icons.png") -72px -2px no-repeat;
-  background-size: 302px;
+  background-size: 751px;
 }
 @media (min-width: 800px) {
   .icon {
@@ -88,20 +88,36 @@ z-index
     top: 10px;
     left: 10px;
   }
+  .about {
+    top: 0;
+    left: 0;
+  }
   .about .icon:after {
-    background: url("../img/icons.png") -166px -2px no-repeat;
-    background-size: 372px;
+    background: url("../img/icons.png") -200px -7px no-repeat;
+    background-size: 751px;
+  }
+  .code {
+    bottom: 0;
+    left: 0;
   }
   .code .icon:after {
-    background: url("../img/icons.png") -240px -2px no-repeat;
-    background-size: 372px;
+    background: url("../img/icons.png") -243px -2px no-repeat;
+    background-size: 649px;
+  }
+  .design {
+    top: 0;
+    right: 0;
   }
   .design .icon:after {
-    background: url("../img/icons.png") -5px -3px no-repeat;
-    background-size: 372px;
+    background: url("../img/icons.png") -7px -5px no-repeat;
+    background-size: 648px;
+  }
+  .contact {
+    bottom: 0;
+    right: 0;
   }
   .contact .icon:after {
     background: url("../img/icons.png") -89px -2px no-repeat;
-    background-size: 372px;
+    background-size: 649px;
   }
 }

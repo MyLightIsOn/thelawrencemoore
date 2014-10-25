@@ -34,21 +34,21 @@ z-index
 #about-page .about-me {
   color: #ffffff;
 }
-#about-page .about-me table {
+#about-page .about-me table.who-I-am {
   padding: 18px 0 42px;
   margin: 60px auto 60px;
   border-top: 3px solid #ffffff;
   border-bottom: 3px solid #ffffff;
 }
-#about-page .about-me table .about-title {
+#about-page .about-me table.who-I-am .about-title {
   text-align: center;
   padding-bottom: 20px;
 }
-#about-page .about-me table td {
+#about-page .about-me table.who-I-am td {
   padding: 10px 27px;
   position: relative;
 }
-#about-page .about-me table .light-bulb {
+#about-page .about-me table.who-I-am .light-bulb {
   display: block;
   width: 62px;
   height: 50px;
@@ -57,19 +57,159 @@ z-index
   margin-right: 20px;
   top: -5px;
 }
-#about-page .about-me table .light-bulb.light-on:before {
+#about-page .about-me table.who-I-am .light-bulb.light-on:before {
   width: 62px;
   height: 50px;
   content: '';
   background: url('../img/icons.png') no-repeat -23px -274px;
   position: absolute;
 }
-#about-page .about-me table .light-bulb.light-off:before {
+#about-page .about-me table.who-I-am .light-bulb.light-off:before {
   width: 62px;
   height: 50px;
   content: '';
   background: url('../img/icons.png') no-repeat -110px -274px;
   position: absolute;
+}
+#about-page .weapons-section {
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  border-bottom: 3px solid #ffffff;
+}
+#about-page .weapons-section table {
+  margin: 15px auto 60px;
+}
+#about-page .weapons-section table td {
+  width: 166px;
+  vertical-align: text-top;
+}
+#about-page .weapons-section .weapons-icon {
+  width: 166px;
+  height: 166px;
+  display: block;
+  position: relative;
+  margin: 30px 20px 10px;
+}
+#about-page .weapons-section .weapons-icon:after {
+  width: 166px;
+  height: 166px;
+  display: block;
+  position: absolute;
+}
+#about-page .weapons-section .weapons-icon.html:after {
+  content: '';
+  background: url("../img/icons.png") no-repeat -11px -396px;
+}
+#about-page .weapons-section .weapons-icon.css:after {
+  content: '';
+  background: url("../img/icons.png") no-repeat -220px -396px;
+}
+#about-page .weapons-section .weapons-icon.javascript:after {
+  content: '';
+  background: url("../img/icons.png") no-repeat -429px -396px;
+}
+#about-page .weapons-section .weapons-icon.jquery:after {
+  content: '';
+  background: url("../img/icons.png") no-repeat -637px -396px;
+}
+#about-page .weapons-section .weapons-icon.less:after {
+  content: '';
+  background: url("../img/icons.png") no-repeat -847px -396px;
+}
+#about-page .weapons-section .weapons-icon.webstorm:after {
+  content: '';
+  background: url("../img/icons.png") no-repeat -11px -615px;
+}
+#about-page .weapons-section .weapons-icon.photoshop:after {
+  content: '';
+  background: url("../img/icons.png") no-repeat -220px -615px;
+}
+#about-page .weapons-section .weapons-icon.axure:after {
+  content: '';
+  background: url("../img/icons.png") no-repeat -429px -615px;
+}
+#about-page .weapons-section .weapons-icon.chrome:after {
+  content: '';
+  background: url("../img/icons.png") no-repeat -637px -615px;
+}
+#about-page .weapons-section .weapons-icon.imagination:after {
+  content: '';
+  background: url("../img/icons.png") no-repeat -847px -615px;
+}
+#about-page .time-section {
+  height: 720px;
+  padding-top: 40px;
+  border-bottom: 3px solid #ffffff;
+  position: relative;
+}
+#about-page .time-section .section-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+}
+#about-page .time-section img {
+  width: 44%;
+  max-width: 486px;
+  position: absolute;
+  left: 0;
+}
+#about-page .time-section table {
+  margin-top: 94px;
+  position: absolute;
+  right: 0;
+}
+#about-page .time-section table td {
+  vertical-align: middle;
+}
+#about-page .time-section .red {
+  background-color: #db3a24;
+}
+#about-page .time-section .blue {
+  background-color: #1a7287;
+}
+#about-page .time-section .green {
+  background-color: #1ba33f;
+}
+#about-page .time-section .yellow {
+  background-color: #daaf20;
+}
+#about-page .time-section .grey {
+  background-color: #c0c0c0;
+}
+#about-page .chart-color {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 6px 12px 6px 0;
+}
+#about-page .working {
+  position: relative;
+  padding: 44px 0 120px;
+}
+#about-page .working .section-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 62px;
+}
+#about-page .working .large-light {
+  display: block;
+  width: 324px;
+  height: 268px;
+  position: absolute;
+  right: 0;
+  top: 190px;
+}
+#about-page .working .large-light:after {
+  content: '';
+  display: block;
+  width: 324px;
+  height: 268px;
+  background: url("../img/icons.png") no-repeat -634px -35px;
+  position: absolute;
+}
+#about-page .working p {
+  width: 64%;
+  display: block;
 }
 .about .tile-title {
   top: 18px;
