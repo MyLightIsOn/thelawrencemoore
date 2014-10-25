@@ -37,8 +37,6 @@ $(function(){
             color = '#db3a24'
         }
 
-        console.log(color);
-
         var tileIcon = $(this).find('.icon');
         var tileTitle = $(this).find('.tile-title');
 
@@ -64,6 +62,14 @@ $(function(){
     $('.home-tile').on('click',function(){
         var tileExpand = $(this).children('.tile-expand');
         var i = 0;
+
+        //Displays close button
+        $('.close-page').css({
+            right: 30
+        });
+        $('.close-page').animate({
+            opacity: 1
+        });
 
         tileExpand.addClass('expanded');
 
@@ -146,6 +152,16 @@ $(function(){
         var headerText =  $(activeContentPage).find('.page-header h1');
         var headerBottom = $(activeContentPage).find('.page-header h5');
 
+        //Hides close button
+
+
+        $('.close-page').animate({
+            opacity: 0
+        }, function(){
+            $('.close-page').css({
+                right: 30
+            });
+        });
 
         //Returns the scroll position back to the top of the page then calls returnState()
         $(screen).animate(
@@ -193,6 +209,35 @@ $(function(){
             });
         }
 
-    })
+    });
+
+    //Process slideshows
+    $(".version").text($.swipeshow.version);
+    $(".slideshow").swipeshow({
+        mouse: true,
+        autostart: false
+    });
+
+    $('.view').on('click', function(){
+        var slideShow = $(this).parent('div').next();
+
+        if($(this).hasClass('closeSlideShow')){
+            $(slideShow).animate({
+                height: 0
+            });
+            $(this).css({
+                backgroundColor: ''
+            });
+            $(this).text('View Process').removeClass('closeSlideShow');
+        } else {
+            $(this).text('Close Slideshow').addClass('closeSlideShow');
+            $(this).css({
+                backgroundColor: '#db3a24'
+            });
+            $(slideShow).animate({
+                height: 539
+            });
+        }
+    });
 });
 
