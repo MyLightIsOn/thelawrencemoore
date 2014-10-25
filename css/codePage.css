@@ -27,6 +27,16 @@ z-index
 #code-page .page-content {
   background-color: #1a7287;
 }
+#code-page .view {
+  background-color: #1ba33f;
+  text-decoration: none;
+}
+#code-page .view:hover {
+  background-color: #27abcb;
+}
+#code-page .git {
+  left: 520px;
+}
 .code .tile-title {
   top: 13px;
   left: -21px;

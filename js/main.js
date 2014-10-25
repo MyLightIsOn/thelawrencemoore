@@ -159,7 +159,7 @@ $(function(){
             opacity: 0
         }, function(){
             $('.close-page').css({
-                right: 30
+                right: -1000
             });
         });
 
@@ -218,7 +218,7 @@ $(function(){
         autostart: false
     });
 
-    $('.view').on('click', function(){
+    $('.process-view.view').on('click', function(){
         var slideShow = $(this).parent('div').next();
 
         if($(this).hasClass('closeSlideShow')){

@@ -159,8 +159,11 @@ footer .close-page {
   border-radius: 30px;
   cursor: pointer;
   font-size: 20px;
-  color: #ffffff;
   opacity: 0;
+}
+footer .close-page:hover {
+  color: #ffffff;
+  background-color: #686868;
 }
 @media (min-width: 800px) {
   .content-page header {
