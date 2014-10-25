@@ -9,6 +9,7 @@ z-index
 ****************************/
 #about-page {
   background-color: #db7f24;
+  font-size: 22px;
 }
 #about-page header {
   background: url("../img/about_small.jpg") no-repeat center;
@@ -26,6 +27,49 @@ z-index
 }
 #about-page .page-content {
   background-color: #db7f24;
+}
+#about-page .about-tile {
+  color: #ffffff;
+}
+#about-page .about-me {
+  color: #ffffff;
+}
+#about-page .about-me table {
+  padding: 18px 0 42px;
+  margin: 60px auto 60px;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+#about-page .about-me table .about-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+#about-page .about-me table td {
+  padding: 10px 27px;
+  position: relative;
+}
+#about-page .about-me table .light-bulb {
+  display: block;
+  width: 62px;
+  height: 50px;
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  top: -5px;
+}
+#about-page .about-me table .light-bulb.light-on:before {
+  width: 62px;
+  height: 50px;
+  content: '';
+  background: url('../img/icons.png') no-repeat -23px -274px;
+  position: absolute;
+}
+#about-page .about-me table .light-bulb.light-off:before {
+  width: 62px;
+  height: 50px;
+  content: '';
+  background: url('../img/icons.png') no-repeat -110px -274px;
+  position: absolute;
 }
 .about .tile-title {
   top: 18px;

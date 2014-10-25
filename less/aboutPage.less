@@ -2,6 +2,7 @@
 
 #about-page {
     background-color: @orange;
+    font-size: 22px;
 
     header {
         background: url("../img/about_small.jpg") no-repeat center;
@@ -23,6 +24,54 @@
 
     .page-content {
         background-color: @orange;
+    }
+
+    .about-tile {
+        color: @white;
+    }
+
+    .about-me {
+        color: @white;
+
+        table {
+            padding: 18px 0 42px;
+            margin: 60px auto 60px;
+            border-top: 3px solid @white;
+            border-bottom: 3px solid @white;
+
+            .about-title {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+            td {
+                padding: 10px 27px;
+                position: relative;
+            }
+            .light-bulb {
+                display: block;
+                width: 62px;
+                height: 50px;
+                position: relative;
+                float: left;
+                margin-right: 20px;
+                top: -5px;
+            }
+            .light-bulb.light-on:before {
+                width: 62px;
+                height: 50px;
+                content: '';
+                background: url('../img/icons.png') no-repeat -23px -274px;
+                position: absolute;
+            }
+            .light-bulb.light-off:before {
+                width: 62px;
+                height: 50px;
+                content: '';
+                background: url('../img/icons.png') no-repeat -110px -274px;
+                position: absolute;
+            }
+        }
     }
 }
 
