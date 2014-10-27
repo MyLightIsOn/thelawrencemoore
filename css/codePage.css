@@ -30,6 +30,7 @@ z-index
 #code-page .view {
   background-color: #1ba33f;
   text-decoration: none;
+  left: 295px;
 }
 #code-page .view:hover {
   background-color: #27abcb;
