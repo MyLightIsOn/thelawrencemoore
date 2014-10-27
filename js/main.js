@@ -37,26 +37,41 @@ $(function(){
             color = '#db3a24'
         }
 
-        var tileIcon = $(this).find('.icon');
+        var iconContainer = $(this).find('.icon-container');
         var tileTitle = $(this).find('.tile-title');
+        var thisIconOff = $(this).find('.icon');
+        var thisIconOn = $(this).find('.icon-on');
 
-        $(tileIcon).stop().animate({
+        $(iconContainer).stop().animate({
             backgroundColor: color
         });
         $(tileTitle).stop().animate({
             color: color
         });
+        $(thisIconOff).stop().animate({
+            top: -92
+        });
+        $(thisIconOn).stop().animate({
+            top: -92
+        });
 
-        console.log($(tileIcon).backgroundPosition());
     }, function(){
-        var tileIcon = $(this).find('.icon');
+        var iconContainer = $(this).find('.icon-container');
         var tileTitle = $(this).find('.tile-title');
+        var thisIconOff = $(this).find('.icon');
+        var thisIconOn = $(this).find('.icon-on');
 
-        $(tileIcon).stop().animate({
+        $(iconContainer).stop().animate({
             backgroundColor: '#ffffff'
         });
         $(tileTitle).stop().animate({
             color: '#dbdbdb'
+        });
+        $(thisIconOff).stop().animate({
+            top: 0
+        });
+        $(thisIconOn).stop().animate({
+            top: 0
         });
     });
 
@@ -129,7 +144,7 @@ $(function(){
                         //Page text moves up and fades in
                         $(pageContent).animate({
                             opacity: 1,
-                            top: bottom + 60
+                            top: bottom + 160
                         });
 
                         //Header text gets a higher z-index so it stays above the gradient

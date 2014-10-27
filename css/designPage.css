@@ -14,18 +14,50 @@ z-index
   background: url("../img/design_small.jpg") no-repeat center;
   background-size: cover;
 }
-@media (min-width: 800px) {
-  #design-page header {
-    background: url("../img/design_large.jpg") no-repeat center;
-    background-size: cover;
-  }
-}
 #design-page .page-wrapper {
   background: linear-gradient(to bottom, rgba(27, 163, 63, 0) 0%, #1ba33f 44%);
   background: -webkit-linear-gradient(top, rgba(27, 163, 63, 0) 0%, #1ba33f 44%);
 }
 #design-page .page-content {
   background-color: #1ba33f;
+}
+#design-page .process-list {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 22px;
+  line-height: 31px;
+  padding: 20px;
+}
+@media (min-width: 800px) {
+  #design-page header {
+    background: url("../img/design_large.jpg") no-repeat center;
+    background-size: cover;
+  }
+  #design-page .slideshow {
+    width: 1000px;
+  }
+  #design-page .process-list,
+  #design-page .process-text {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 20px;
+    width: 520px;
+  }
+  #design-page .process-list {
+    padding-left: 38px;
+  }
+  #design-page .process-content {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+  #design-page .process-image {
+    display: inline-block;
+    width: 480px;
+    margin-right: 20px;
+    position: absolute;
+    left: 0;
+  }
 }
 .design .tile-title {
   top: 21px;

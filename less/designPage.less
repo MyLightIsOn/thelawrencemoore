@@ -8,14 +8,6 @@
         background-size: cover;
     }
 
-    @media (min-width: 800px) {
-
-        header {
-            background: url("../img/design_large.jpg") no-repeat center;
-            background-size: cover;
-        }
-    }
-
     .page-wrapper {
         background: linear-gradient(to bottom, rgba(27,163,63,0) 0%,rgba(27,163,63,1) 44%);
         background: -webkit-linear-gradient(top, rgba(27,163,63,0) 0%,rgba(27,163,63,1) 44%);
@@ -23,6 +15,47 @@
 
     .page-content {
         background-color: @green;
+    }
+
+    .process-list {
+        color: @white;
+        font-family: @raleway;
+        font-size: 22px;
+        line-height: 31px;
+        padding: 20px;
+    }
+
+    @media (min-width: 800px) {
+
+        header {
+            background: url("../img/design_large.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        .slideshow {
+            width: 1000px;
+        }
+        .process-list, .process-text {
+            font-size: 18px;
+            line-height: 26px;
+            padding: 20px;
+            width: 520px;
+        }
+        .process-list {
+            padding-left: 38px;
+        }
+        .process-content {
+            display: inline-block;
+            position: absolute;
+            right: 0;
+        }
+        .process-image {
+            display: inline-block;
+            width: 480px;
+            margin-right: 20px;
+            position: absolute;
+            left: 0;
+        }
     }
 }
 

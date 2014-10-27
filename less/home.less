@@ -10,29 +10,6 @@
     cursor: pointer;
 }
 
-.icon {
-    width: 80px;
-    height: 80px;
-    display: block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-
-    border: solid 4px @grey;
-    border-radius: 40px;
-}
-
-/*.icon:after {
-    width: 52px;
-    height: 52px;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-
-    content: '';
-}*/
-
 .tile-expand {
     width: 100%;
     height: 100%;
@@ -46,6 +23,35 @@
     border: 1px solid @grey;
 }
 
+.icon {
+    width: 80px;
+    height: 80px;
+    display: block;
+    /*position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;*/
+
+    border-radius: 40px;
+    position: relative;
+}
+
+.icon-on {
+
+}
+
+.icon-container {
+    width: 92px;
+    height: 92px;overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    border: solid 4px @grey;
+    border-radius: 50px;
+}
+
 .about {
     top: 0;
     left: 0;
@@ -54,14 +60,24 @@
         background: url("../img/icons.png") -189px 1px no-repeat;
         background-size: 751px;
     }
+
+    .icon-on {
+        background: url("../img/icons.png") -189px -93px no-repeat;
+        background-size: 751px;
+    }
 }
 
 .code {
     bottom: 0;
     left: 0;
 
-    .icon:after {
-        background: url("../img/icons.png") -194px -2px no-repeat;
+    .icon {
+        background: url("../img/icons.png") -275px 1px no-repeat;
+        background-size: 751px;
+    }
+
+    .icon-on {
+        background: url("../img/icons.png") -275px -93px no-repeat;
         background-size: 751px;
     }
 }
@@ -70,9 +86,13 @@
     top: 0;
     right: 0;
 
-    .icon:after {
-        background: url("../img/icons.png") -4px -2px no-repeat;
-        background-size: 751px;
+    .icon {
+        background: url("../img/icons.png") 2px 4px no-repeat;
+        background-size: 686px;
+    }
+    .icon-on {
+        background: url("../img/icons.png") 2px -83px no-repeat;
+        background-size: 686px;
     }
 }
 
@@ -80,9 +100,13 @@
     bottom: 0;
     right: 0;
 
-    .icon:after {
-        background: url("../img/icons.png") -72px -2px no-repeat;
-        background-size: 751px;
+    .icon {
+        background: url("../img/icons.png") -86px 5px no-repeat;
+        background-size: 686px;
+    }
+    .icon-on {
+        background: url("../img/icons.png") -87px -80px no-repeat;
+        background-size: 686px;
     }
 }
 
@@ -120,7 +144,7 @@
         left: 0;
 
         .icon:after {
-            background: url("../img/icons.png") -243px -2px no-repeat;
+            background: url("../img/icons.png") -200px -2px no-repeat;
             background-size: 649px;
         }
     }
@@ -130,7 +154,7 @@
         right: 0;
 
         .icon:after {
-            background: url("../img/icons.png") -7px -5px no-repeat;
+            background: url("../img/icons.png") -200px -5px no-repeat;
             background-size: 648px;
         }
     }
@@ -140,7 +164,7 @@
         right: 0;
 
         .icon:after {
-            background: url("../img/icons.png") -89px -2px no-repeat;
+            background: url("../img/icons.png") -200px -2px no-repeat;
             background-size: 649px;
         }
     }
