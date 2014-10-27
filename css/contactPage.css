@@ -27,6 +27,13 @@ z-index
 #contact-page .page-content {
   background-color: #db3a24;
 }
+#contact-page .contact-section {
+  height: 800px;
+  text-align: center;
+}
+#contact-page .contact-section h1 {
+  color: #ffffff;
+}
 .contact .tile-title {
   top: 29px;
   left: -35px;

@@ -45,7 +45,9 @@ $(function(){
         });
         $(tileTitle).stop().animate({
             color: color
-        })
+        });
+
+        console.log($(tileIcon).backgroundPosition());
     }, function(){
         var tileIcon = $(this).find('.icon');
         var tileTitle = $(this).find('.tile-title');
