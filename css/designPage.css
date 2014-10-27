@@ -28,6 +28,10 @@ z-index
   line-height: 31px;
   padding: 20px;
 }
+#design-page .large-slides img {
+  display: block;
+  margin: 0 auto;
+}
 @media (min-width: 800px) {
   #design-page header {
     background: url("../img/design_large.jpg") no-repeat center;
@@ -35,6 +39,13 @@ z-index
   }
   #design-page .slideshow {
     width: 1000px;
+  }
+  #design-page .slideshow .link {
+    color: #1ba33f;
+    font-weight: bold;
+  }
+  #design-page .slideshow .link:hover {
+    color: #ffffff;
   }
   #design-page .process-list,
   #design-page .process-text {
