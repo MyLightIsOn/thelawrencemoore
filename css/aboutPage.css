@@ -15,7 +15,7 @@ z-index
   background: url("../img/about_small.jpg") no-repeat center;
   background-size: cover;
 }
-@media (min-width: 800px) {
+@media (min-width: 1282px) {
   #about-page header {
     background: url("../img/about_large.jpg") no-repeat center;
     background-size: cover;
@@ -220,7 +220,7 @@ z-index
   width: 100%;
   display: block;
 }
-@media (min-width: 800px) {
+@media (min-width: 1282px) {
   #about-page {
     background-color: #db7f24;
     font-size: 22px;
@@ -376,7 +376,7 @@ z-index
   top: 18px;
   left: -25px;
 }
-@media (min-width: 800px) {
+@media (min-width: 1282px) {
   .about .tile-title {
     left: -83px;
     top: 62px;

@@ -164,7 +164,12 @@ footer .close-page:hover {
   color: #ffffff;
   background-color: #686868;
 }
-@media (min-width: 800px) {
+@media (min-width: 1282px) {
+  .fixed-width {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0 80px;
+  }
   .content-page header {
     padding: 110px 12% 20px;
     height: 150%;
@@ -175,9 +180,6 @@ footer .close-page:hover {
   .content-page header h5 {
     font-size: 30px;
     right: 15%;
-  }
-  .content-page .page-content {
-    padding: 0 21%;
   }
   .content-page .page-content p {
     margin-bottom: 23px;

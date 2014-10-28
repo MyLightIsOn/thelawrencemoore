@@ -14,7 +14,7 @@ z-index
   background: url("../img/contact_small.jpg") no-repeat center;
   background-size: cover;
 }
-@media (min-width: 800px) {
+@media (min-width: 1282px) {
   #contact-page header {
     background: url("../img/contact_large.jpg") no-repeat center;
     background-size: cover;
@@ -38,7 +38,7 @@ z-index
   top: 29px;
   left: -35px;
 }
-@media (min-width: 800px) {
+@media (min-width: 1282px) {
   .contact .tile-title {
     left: -123px;
     top: 99px;

@@ -14,7 +14,7 @@ z-index
   background: url("../img/code_small.jpg") no-repeat center;
   background-size: cover;
 }
-@media (min-width: 800px) {
+@media (min-width: 1282px) {
   #code-page header {
     background: url("../img/code_large.jpg") no-repeat center;
     background-size: cover;
@@ -42,7 +42,7 @@ z-index
   top: 13px;
   left: -21px;
 }
-@media (min-width: 800px) {
+@media (min-width: 1282px) {
   .code .tile-title {
     left: -66px;
     top: 44px;

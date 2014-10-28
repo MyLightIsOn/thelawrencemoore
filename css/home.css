@@ -98,7 +98,7 @@ z-index
   background: url("../img/icons.png") -87px -67px no-repeat;
   background-size: 686px;
 }
-@media (min-width: 800px) {
+@media (min-width: 1282px) {
   .icon {
     width: 92px;
     height: 92px;

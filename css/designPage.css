@@ -20,7 +20,10 @@ z-index
 }
 #design-page .page-content {
   background-color: #1ba33f;
-  padding: 0 16px;
+}
+#design-page .page-content .fixed-width {
+  background: linear-gradient(to bottom, rgba(27, 163, 63, 0) 0%, #1ba33f 44%);
+  background: -webkit-linear-gradient(top, rgba(27, 163, 63, 0) 0%, #1ba33f 44%);
 }
 #design-page .process-list {
   color: #ffffff;
@@ -38,12 +41,10 @@ z-index
 }
 #design-page .example-wrapper.mobile {
   display: block;
-  width: 350px;
 }
-@media (min-width: 800px) {
+@media (min-width: 1282px) {
   #design-page .page-content {
     background-color: #1ba33f;
-    padding: 0 21%;
   }
   #design-page .example-wrapper.mobile {
     display: none;
@@ -92,7 +93,7 @@ z-index
   top: 21px;
   left: -26px;
 }
-@media (min-width: 800px) {
+@media (min-width: 1282px) {
   .design .tile-title {
     left: -86px;
     top: 74px;

@@ -133,7 +133,7 @@ $(function(){
                     //Creates the scroll effect for the inner pages and fades it in
                     $(window).one('scroll', function(){
 
-                        if(screenWidth >= 800){
+                        if(screenWidth >= 1282){
                             $(activePage).find('.page-wrapper').animate({
                                 opacity: 1,
                                 top: 0
@@ -159,7 +159,7 @@ $(function(){
                         });
                     });
 
-                    if(screenWidth < 800){
+                    if(screenWidth < 1282){
                         $(activePage).find('.page-wrapper').css({
                             opacity: 1,
                             top: 0
@@ -173,7 +173,8 @@ $(function(){
                         //Page text moves up and fades in
                         $(pageContent).css({
                             opacity: 1,
-                            top: bottom + 80
+                            top: bottom + 30,
+                            paddingTop: 30
                         });
 
                         //Header text gets a higher z-index so it stays above the gradient
