@@ -77,6 +77,7 @@ $(function(){
 
     //Expands the homepage tile when clicked after grabbing the screen dimensions
     $('.home-tile').on('click',function(){
+        var screenWidth = screen.width();
         var tileExpand = $(this).children('.tile-expand');
         var i = 0;
 
@@ -131,7 +132,35 @@ $(function(){
 
                     //Creates the scroll effect for the inner pages and fades it in
                     $(window).one('scroll', function(){
-                        $(activePage).find('.page-wrapper').animate({
+
+                        if(screenWidth >= 800){
+                            $(activePage).find('.page-wrapper').animate({
+                                opacity: 1,
+                                top: 0
+                            });
+
+                            //Places the page text below the header quote author
+                            $(pageContent).css({
+                                top: bottom + 130
+                            });
+
+                            //Page text moves up and fades in
+                            $(pageContent).animate({
+                                opacity: 1,
+                                top: bottom + 160
+                            });
+                        }
+                        //Header text gets a higher z-index so it stays above the gradient
+                        $(headerText).css({
+                            zIndex: 100
+                        });
+                        $(headerBottom).css({
+                            zIndex: 100
+                        });
+                    });
+
+                    if(screenWidth < 800){
+                        $(activePage).find('.page-wrapper').css({
                             opacity: 1,
                             top: 0
                         });
@@ -142,9 +171,9 @@ $(function(){
                         });
 
                         //Page text moves up and fades in
-                        $(pageContent).animate({
+                        $(pageContent).css({
                             opacity: 1,
-                            top: bottom + 160
+                            top: bottom + 80
                         });
 
                         //Header text gets a higher z-index so it stays above the gradient
@@ -154,7 +183,15 @@ $(function(){
                         $(headerBottom).css({
                             zIndex: 100
                         });
-                    })
+
+                        //Hides my name
+                        $('.myName').css({
+                            display: "none"
+                        });
+                        $('.myJob').css({
+                            display: "none"
+                        })
+                    }
                 }
             }
         });

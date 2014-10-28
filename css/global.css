@@ -44,7 +44,7 @@ body {
 }
 .content-page header {
   padding: 30px 7% 20px;
-  height: 150%;
+  height: 52%;
 }
 .content-page header h1 {
   color: #ffffff;
@@ -93,7 +93,7 @@ body {
   /* IE */
 }
 .section-title {
-  font-size: 48px;
+  font-size: 25px;
   color: #ffffff;
 }
 .example-wrapper {
@@ -150,15 +150,15 @@ footer .myJob {
   color: #c0c0c0;
 }
 footer .close-page {
+  width: 190px;
   display: block;
-  position: absolute;
-  right: 1000px;
   bottom: 9px;
-  padding: 14px 55px;
+  padding: 14px 38px;
+  margin: 0 auto;
   background-color: #c0c0c0;
   border-radius: 30px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
   opacity: 0;
 }
 footer .close-page:hover {
@@ -168,6 +168,7 @@ footer .close-page:hover {
 @media (min-width: 800px) {
   .content-page header {
     padding: 110px 12% 20px;
+    height: 150%;
   }
   .content-page header h1 {
     font-size: 70px;
@@ -185,6 +186,9 @@ footer .close-page:hover {
   .tile-title {
     font-size: 70px;
     top: 70px;
+  }
+  .section-title {
+    font-size: 48px;
   }
   .example-wrapper {
     margin-top: 87px;
@@ -214,6 +218,18 @@ footer .close-page:hover {
   .example .example-image {
     float: left;
     margin-right: 30px;
+  }
+  .close-page {
+    display: block;
+    position: absolute;
+    right: 1000px;
+    bottom: 9px;
+    padding: 14px 55px;
+    background-color: #c0c0c0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0;
   }
   footer {
     display: block;
