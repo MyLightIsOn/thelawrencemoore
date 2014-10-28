@@ -15,6 +15,7 @@
 
     .page-content {
         background-color: @green;
+        padding: 0 16px;
     }
 
     .process-list {
@@ -30,7 +31,28 @@
         margin: 0 auto;
     }
 
+    .example-wrapper.desktop {
+        display: none;
+    }
+
+    .example-wrapper.mobile {
+        display: block;
+        width: 350px;
+    }
+
     @media (min-width: 800px) {
+        .page-content {
+            background-color: @green;
+            padding: 0 21%;
+        }
+
+        .example-wrapper.mobile {
+            display: none;
+        }
+
+        .example-wrapper.desktop {
+            display: block;
+        }
 
         header {
             background: url("../img/design_large.jpg") no-repeat center;

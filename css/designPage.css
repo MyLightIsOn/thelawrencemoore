@@ -20,6 +20,7 @@ z-index
 }
 #design-page .page-content {
   background-color: #1ba33f;
+  padding: 0 16px;
 }
 #design-page .process-list {
   color: #ffffff;
@@ -32,7 +33,24 @@ z-index
   display: block;
   margin: 0 auto;
 }
+#design-page .example-wrapper.desktop {
+  display: none;
+}
+#design-page .example-wrapper.mobile {
+  display: block;
+  width: 350px;
+}
 @media (min-width: 800px) {
+  #design-page .page-content {
+    background-color: #1ba33f;
+    padding: 0 21%;
+  }
+  #design-page .example-wrapper.mobile {
+    display: none;
+  }
+  #design-page .example-wrapper.desktop {
+    display: block;
+  }
   #design-page header {
     background: url("../img/design_large.jpg") no-repeat center;
     background-size: cover;

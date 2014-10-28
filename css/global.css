@@ -101,7 +101,7 @@ body {
 }
 .example {
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 30px;
   padding-top: 30px;
   border-top: 3px solid #fff;
 }
@@ -110,7 +110,6 @@ body {
   margin-bottom: 10px;
 }
 .example .view {
-  position: absolute;
   display: inline-block;
   padding: 12px 33px;
   background-color: #1a7287;
