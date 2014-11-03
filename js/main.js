@@ -294,5 +294,25 @@ $(function(){
             });
         }
     });
+
+    $('.process-content').click(function(){
+        if($(this).hasClass('toggledOff')){
+            $(this).css({
+                opacity: 0.9
+            });
+            $(this).removeClass('toggledOff');
+            $('.toggleInstruction').css({
+                color: '#fff'
+            })
+        } else {
+            $(this).css({
+                opacity: 0
+            });
+            $(this).addClass('toggledOff');
+            $('.toggleInstruction').css({
+                color: '#000'
+            })
+        }
+    });
 });
 

@@ -30,6 +30,11 @@
         padding: 20px;
     }
 
+    .process-text a {
+        color: @green;
+        font-weight: bold;
+    }
+
     .large-slides img {
         display: block;
         margin: 0 auto;
@@ -41,6 +46,60 @@
 
     .example-wrapper.mobile {
         display: block;
+        padding-bottom: 200px;
+
+        .process-content {
+            position: absolute;
+            top: 0;
+            background: #000;
+            bottom: 0;
+            opacity: 0.8;
+            padding: 4%;
+
+            p, li {
+                font-size: 17px;
+                line-height: 24px;
+            }
+        }
+
+        .toggleInstruction {
+            position: absolute;
+            color: #fff;
+            font-family: @raleway;
+            font-weight: bold;
+            bottom: 59px;
+            left: 11px;
+        }
+
+        .large-slides li img {
+            width: 100%;
+        }
+    }
+
+
+    /* percentage widths were breaking the slide show. Fix and refactor this garbage */
+
+    @media (max-width: 389px){
+        .myshow {
+            width: 280px;
+        }
+    }
+
+    @media (min-width: 390px) and (max-width: 460px){
+        .myshow {
+            width: 330px;
+        }
+    }
+    @media (min-width: 461px) and (max-width: 579px){
+        .myshow {
+            width: 420px;
+        }
+    }
+
+    @media (min-width: 580px) and (max-width: 700px){
+        .myshow {
+            width: 500px;
+        }
     }
 
     @media (min-width: 1282px) {
