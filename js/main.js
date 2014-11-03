@@ -274,7 +274,7 @@ $(function(){
     });
 
     $('.process-view.view').on('click', function(){
-        var slideShow = $(this).parent('div').next();
+        var slideShow = $(this).closest('.example').find('.slideshow');
 
         if($(this).hasClass('closeSlideShow')){
             $(slideShow).animate({

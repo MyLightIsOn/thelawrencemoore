@@ -62,7 +62,7 @@ body {
 }
 .content-page .page-content {
   width: 100%;
-  padding: 0 7%;
+  padding: 0;
   position: absolute;
   opacity: 0;
 }
@@ -72,6 +72,9 @@ body {
   font-size: 22px;
   line-height: 31px;
   margin-bottom: 40px;
+}
+.content-page .page-content .text {
+  padding: 0 7%;
 }
 .content-page .page-wrapper {
   width: 100%;
@@ -96,6 +99,12 @@ body {
   font-size: 25px;
   color: #ffffff;
 }
+.intro-text {
+  padding: 0 7%;
+}
+.button-container {
+  margin-left: 0px;
+}
 .example-wrapper {
   margin-top: 87px;
 }
@@ -116,6 +125,8 @@ body {
   border-radius: 24px;
   color: #ffffff;
   cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 .example .view:hover {
   background-color: #27abcb;
@@ -127,6 +138,7 @@ body {
   width: 24%;
   float: left;
   margin-right: 21px;
+  margin-left: 7%;
 }
 footer {
   width: 100%;
@@ -170,6 +182,9 @@ footer .close-page:hover {
     margin: 0 auto;
     padding: 0 80px;
   }
+  .button-container {
+    margin-left: 251px;
+  }
   .content-page header {
     padding: 110px 12% 20px;
     height: 150%;
@@ -202,7 +217,6 @@ footer .close-page:hover {
     margin-bottom: 10px;
   }
   .example .view {
-    position: absolute;
     display: inline-block;
     padding: 12px 33px;
     background-color: #1a7287;

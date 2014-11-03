@@ -74,7 +74,7 @@ z-index
 }
 @media (max-width: 389px) {
   #design-page .myshow {
-    width: 280px;
+    width: 300px;
   }
 }
 @media (min-width: 390px) and (max-width: 460px) {
