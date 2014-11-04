@@ -275,6 +275,7 @@ $(function(){
 
     $('.process-view.view').on('click', function(){
         var slideShow = $(this).closest('.example').find('.slideshow');
+        var screenWidth = screen.width();
 
         if($(this).hasClass('closeSlideShow')){
             $(slideShow).animate({
@@ -289,29 +290,24 @@ $(function(){
             $(this).css({
                 backgroundColor: '#db3a24'
             });
-            $(slideShow).animate({
-                height: 539
-            });
-        }
-    });
 
-    $('.process-content').click(function(){
-        if($(this).hasClass('toggledOff')){
-            $(this).css({
-                opacity: 0.9
-            });
-            $(this).removeClass('toggledOff');
-            $('.toggleInstruction').css({
-                color: '#fff'
-            })
-        } else {
-            $(this).css({
-                opacity: 0
-            });
-            $(this).addClass('toggledOff');
-            $('.toggleInstruction').css({
-                color: '#000'
-            })
+            if(screenWidth <= 1282){
+                $(slideShow).animate({
+                    height: 1000
+                });
+
+                $('.process-content').css({
+                    position: 'static',
+                    background: 'none'
+                });
+                $('.previous, .next').css({
+                    display: 'none'
+                })
+            } else {
+                $(slideShow).animate({
+                    height: 539
+                });
+            }
         }
     });
 });

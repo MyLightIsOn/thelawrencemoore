@@ -72,6 +72,9 @@ z-index
 #design-page .example-wrapper.mobile .large-slides li img {
   width: 100%;
 }
+#design-page .mobile .slide img {
+  width: 100%;
+}
 @media (max-width: 389px) {
   #design-page .myshow {
     width: 300px;
