@@ -46,6 +46,7 @@ z-index
   }
   #code-page .image-container {
     border: 10px solid #27abcb;
+    margin-right: 50px;
   }
 }
 .code .tile-title {

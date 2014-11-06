@@ -55,13 +55,18 @@ z-index
 #design-page .example-wrapper.mobile .example {
   float: left;
 }
+#design-page .example-wrapper.mobile .process-image {
+  display: block;
+  height: 50%;
+  margin: 0 auto;
+}
 #design-page .example-wrapper.mobile .process-content {
   top: 0;
   background: #000;
   bottom: 0;
   opacity: 0.8;
   padding: 4%;
-  height: 100%;
+  height: 50%;
 }
 #design-page .example-wrapper.mobile .process-content p,
 #design-page .example-wrapper.mobile .process-content li {
@@ -108,6 +113,7 @@ z-index
   }
   #design-page .image-container {
     border: 10px solid #57ec7e;
+    margin-right: 50px;
   }
   #design-page .slideshow {
     opacity: 0;
@@ -135,12 +141,14 @@ z-index
   #design-page .process-content {
     display: inline-block;
     width: 50%;
+    height: auto;
     position: absolute;
     right: 0;
   }
   #design-page .process-image {
     display: inline-block;
     width: 50%;
+    height: auto;
     position: absolute;
     left: 0;
   }

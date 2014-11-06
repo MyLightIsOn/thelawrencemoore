@@ -57,14 +57,18 @@
         .example {
             float: left;
         }
-
+        .process-image {
+            display: block;
+            height: 50%;
+            margin: 0 auto;
+        }
         .process-content {
             top: 0;
             background: #000;
             bottom: 0;
             opacity: 0.8;
             padding: 4%;
-            height: 100%;
+            height: 50%;
 
             p, li {
                 font-size: 17px;
@@ -122,6 +126,7 @@
 
         .image-container {
             border: 10px solid @light-green;
+            margin-right: 50px;
         }
 
         .slideshow {
@@ -151,12 +156,14 @@
         .process-content {
             display: inline-block;
             width: 50%;
+            height: auto;
             position: absolute;
             right: 0;
         }
         .process-image {
             display: inline-block;
             width: 50%;
+            height: auto;
             position: absolute;
             left: 0;
         }

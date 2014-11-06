@@ -246,6 +246,7 @@ footer .close-page:hover {
   }
   .example .example-image {
     float: left;
+    border-radius: 100%;
   }
   .example .image-container {
     width: 24%;
