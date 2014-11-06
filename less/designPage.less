@@ -48,13 +48,17 @@
         display: block;
         padding-bottom: 200px;
 
+        .example {
+            float: left;
+        }
+
         .process-content {
-            position: absolute;
             top: 0;
             background: #000;
             bottom: 0;
             opacity: 0.8;
             padding: 4%;
+            height: 100%;
 
             p, li {
                 font-size: 17px;
@@ -62,51 +66,32 @@
             }
         }
 
-        .toggleInstruction {
-            position: absolute;
-            color: #fff;
-            font-family: @raleway;
-            font-weight: bold;
-            bottom: 59px;
-            left: 11px;
-        }
-
         .large-slides li img {
             width: 100%;
         }
-    }
 
-    .mobile {
-
-        .slide {
-
-            img {
-                width: 100%;
-            }
+        .slideshow {
+            opacity: 0;
+            position: fixed;
         }
-    }
-    /* percentage widths were breaking the slide show. Fix and refactor this garbage */
 
-    @media (max-width: 389px){
-        .myshow {
-            width: 300px;
-        }
-    }
+        .close-slideshow {
+            display: inline-block;
+            position: absolute;
+            top: 7px;
+            right: 16px;
+            padding: 7px 16px;
 
-    @media (min-width: 390px) and (max-width: 460px){
-        .myshow {
-            width: 330px;
+            background-color: @blue;
+            border-radius: 24px;
+            color: @white;
+            cursor: pointer;
+            font-family: @archivo;
+            font-size: 11px;
+            z-index: 300;
         }
-    }
-    @media (min-width: 461px) and (max-width: 579px){
-        .myshow {
-            width: 420px;
-        }
-    }
-
-    @media (min-width: 580px) and (max-width: 700px){
-        .myshow {
-            width: 500px;
+        .close-slideshow:hover {
+            background-color: @light-blue;
         }
     }
 
@@ -130,7 +115,8 @@
         }
 
         .slideshow {
-            width: 1000px;
+            opacity: 0;
+            position: fixed;
 
             .link {
                 color: @green;
@@ -139,27 +125,48 @@
             .link:hover {
                 color: @white;
             }
+
+            .slide {
+                width: 100%;
+            }
         }
         .process-list, .process-text {
             font-size: 18px;
             line-height: 26px;
             padding: 20px;
-            width: 520px;
         }
         .process-list {
             padding-left: 38px;
         }
         .process-content {
             display: inline-block;
+            width: 50%;
             position: absolute;
             right: 0;
         }
         .process-image {
             display: inline-block;
-            width: 480px;
-            margin-right: 20px;
+            width: 50%;
             position: absolute;
             left: 0;
+        }
+
+        .close-slideshow {
+            display: inline-block;
+            position: absolute;
+            bottom: 68px;
+            right: 29px;
+            padding: 12px 33px;
+
+            background-color: @blue;
+            border-radius: 24px;
+            color: @white;
+            cursor: pointer;
+            font-family: @archivo;
+            z-index: 300;
+        }
+        .close-slideshow:hover {
+            background-color: @light-blue;
         }
     }
 }

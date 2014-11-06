@@ -273,42 +273,72 @@ $(function(){
         autostart: false
     });
 
+
+    //Opens slideshows
     $('.process-view.view').on('click', function(){
         var slideShow = $(this).closest('.example').find('.slideshow');
-        var screenWidth = screen.width();
+        var buttonPosition = $(this).offset();
+        var buttonTop = this.offsetTop;
 
-        if($(this).hasClass('closeSlideShow')){
+        //Gets button position
+        $(slideShow).offset(buttonPosition);
+
+        //Sets the initial width and height to create enlarging effect.
+        $(slideShow).css({
+            width: 20,
+            height: 20
+        });
+
+        //Removes scrolling
+        $(screen).css({
+            overflowY: 'hidden'
+        });
+
+        //Enlarges slideshow
+        $(slideShow).animate({
+            opacity: 1,
+            height: 100 + '%',
+            width: 100 + "%",
+            zIndex: 9999,
+            top: 0,
+            left: 0
+        });
+
+        // Hides footer
+        $('footer').animate({
+            opacity: 0
+        }, function(){
+            $(this).css({
+                display: "none"
+            })
+        });
+
+        //Closes Slideshow
+        $('.close-slideshow').on('click', function(){
+
+            //Shrinks and hides slideshow
             $(slideShow).animate({
-                height: 0
-            });
-            $(this).css({
-                backgroundColor: ''
-            });
-            $(this).text('View Process').removeClass('closeSlideShow');
-        } else {
-            $(this).text('Close Slideshow').addClass('closeSlideShow');
-            $(this).css({
-                backgroundColor: '#db3a24'
+                left: buttonPosition.left,
+                top: buttonTop + 20,
+                width: 20,
+                height: 20,
+                opacity: 0
             });
 
-            if(screenWidth <= 1282){
-                $(slideShow).animate({
-                    height: 1000
-                });
+            //Adds scrolling back
+            $(screen).css({
+                overflowY: 'scroll'
+            });
 
-                $('.process-content').css({
-                    position: 'static',
-                    background: 'none'
-                });
-                $('.previous, .next').css({
-                    display: 'none'
-                })
-            } else {
-                $(slideShow).animate({
-                    height: 539
-                });
-            }
-        }
+            // Returns footer
+            $('footer').css({
+                display: 'block'
+            });
+
+            $('footer').animate({
+                opacity: 1
+            })
+        })
     });
 });
 

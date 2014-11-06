@@ -17,7 +17,7 @@
 .slideshow {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3), 0 1px 1px rgba(0, 0, 0, 0.4);
   background: #555 url(http://subtlepatterns.subtlepatterns.netdna-cdn.com/patterns/low_contrast_linen.png);
-  margin: 40px auto 0;
+  margin: 0 auto;
 }
 
 .slideshow .slides {
@@ -33,7 +33,7 @@
   cursor: pointer;
 
   position: absolute;
-  width: 20px;
+  width: 87px;
   height: 100%;
   text-align: center;
 
@@ -70,18 +70,37 @@
 
 .slideshow .previous {
   left: 0;
+    display: none;
 }
 
 .slideshow .next {
   right: 0;
+    display: none;
 }
 
 .slideshow .previous:before {
-  content: '\2039';
+    content: '\2039';
+    background-color: #1ba33f;
+    width: 70px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 55px;
+    border-radius: 45px;
+    display: block;
+    left: 7px;
+    opacity: 0;
 }
 
 .slideshow .next:before {
-  content: '\203a';
+    content: '\203a';
+    background-color: #1ba33f;
+    width: 70px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 55px;
+    border-radius: 45px;
+    display: block;
+    right: 7px;
 }
 
 .slideshow .dots,
