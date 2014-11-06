@@ -24,6 +24,10 @@ z-index
 #code-page .page-content {
   background-color: #1a7287;
 }
+#code-page .image-container {
+  border: 5px solid #27abcb;
+  margin-right: 17px;
+}
 #code-page .view {
   background-color: #1ba33f;
   text-decoration: none;
@@ -39,6 +43,9 @@ z-index
   #code-page header {
     background: url("../img/code_large.jpg") no-repeat center;
     background-size: cover;
+  }
+  #code-page .image-container {
+    border: 10px solid #27abcb;
   }
 }
 .code .tile-title {

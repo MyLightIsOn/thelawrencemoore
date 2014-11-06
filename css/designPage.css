@@ -20,10 +20,15 @@ z-index
 }
 #design-page .page-content {
   background-color: #1ba33f;
+  padding-bottom: 150px;
 }
 #design-page .page-content .fixed-width {
   background: linear-gradient(to bottom, rgba(27, 163, 63, 0) 0%, #1ba33f 44%);
   background: -webkit-linear-gradient(top, rgba(27, 163, 63, 0) 0%, #1ba33f 44%);
+}
+#design-page .image-container {
+  border: 5px solid #57ec7e;
+  margin-right: 17px;
 }
 #design-page .process-list {
   color: #ffffff;
@@ -100,6 +105,9 @@ z-index
   #design-page header {
     background: url("../img/design_large.jpg") no-repeat center;
     background-size: cover;
+  }
+  #design-page .image-container {
+    border: 10px solid #57ec7e;
   }
   #design-page .slideshow {
     opacity: 0;
