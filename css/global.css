@@ -34,6 +34,9 @@ body {
   width: 100%;
   height: 100%;
 }
+.fixed-width {
+  position: relative;
+}
 .content-page {
   width: 100%;
   height: 100%;
@@ -109,6 +112,7 @@ body {
   margin-top: 87px;
 }
 .example {
+  position: relative;
   margin-bottom: 30px;
   padding-top: 30px;
   border-top: 3px solid #fff;

@@ -111,6 +111,7 @@ $(function(){
                     var headerText =  $(activePage).find('.page-header h1');
                     var headerBottom = $(activePage).find('.page-header h5');
                     var bottom = $(headerBottom).position().top+$(headerBottom).outerHeight(true);
+                    var fixedWidthDiv = $(activePage).find('.fixed-width');
 
                     //Adds active page class to the selected page
                     $(activePage).addClass('active-page');
@@ -130,24 +131,28 @@ $(function(){
                         overflow: 'visible'
                     });
 
+                    $(fixedWidthDiv).css({
+                        paddingTop: bottom - 550
+                    });
+
                     //Creates the scroll effect for the inner pages and fades it in
                     $(window).one('scroll', function(){
 
                         if(screenWidth >= 1282){
                             $(activePage).find('.page-wrapper').animate({
-                                opacity: 1,
-                                top: 0
+                                opacity: 1
+                                /*top: bottom*/
                             });
 
                             //Places the page text below the header quote author
                             $(pageContent).css({
-                                top: bottom + 130
+                                top: bottom + 250
                             });
 
                             //Page text moves up and fades in
                             $(pageContent).animate({
                                 opacity: 1,
-                                top: bottom + 160
+                                top: 425
                             });
                         }
                         //Header text gets a higher z-index so it stays above the gradient
@@ -327,7 +332,7 @@ $(function(){
 
             //Adds scrolling back
             $(screen).css({
-                overflowY: 'scroll'
+                overflowY: 'auto'
             });
 
             // Returns footer
