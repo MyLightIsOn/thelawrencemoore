@@ -40,10 +40,13 @@
         color: @green;
         font-weight: bold;
     }
+    .mobile {
 
-    .large-slides img {
-        display: block;
-        margin: 0 auto;
+        .large-slides img {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+        }
     }
 
     .example-wrapper.desktop {
@@ -76,10 +79,6 @@
             }
         }
 
-        .large-slides li img {
-            width: 100%;
-        }
-
         .slideshow {
             opacity: 0;
             position: fixed;
@@ -106,6 +105,15 @@
     }
 
     @media (min-width: 1282px) {
+
+        .desktop {
+
+            .large-slides img {
+                display: block;
+                margin: 0 auto;
+                height: 100%;
+            }
+        }
         .page-content {
             background-color: @green;
 
