@@ -155,6 +155,9 @@ z-index
     position: absolute;
     left: 0;
   }
+  #design-page .process-image.wireframe {
+    width: 36%;
+  }
   #design-page .close-slideshow {
     display: inline-block;
     position: absolute;
