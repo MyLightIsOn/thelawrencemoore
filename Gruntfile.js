@@ -34,6 +34,31 @@ module.exports = function(grunt) {
                 files: ['js/templates/*.hbs'],
                 tasks: ['handlebars']
             }
+        },
+
+        concat: {
+            css: {
+                src: [
+                    'css/*'
+                ],
+                dest: 'css/styles.css'
+            }
+        }
+        ,
+        cssmin: {
+            css:{
+                src: 'css/main.css',
+                dest: 'css/main.min.css'
+            }
+        },
+
+        uglify : {
+            js: {
+                files: {
+                    'js/main.min.js' : [ 'js/main.js' ],
+                    'js/swipeshow.min.js' : [ 'js/swipeshow.js' ]
+                }
+            }
         }
     });
 
@@ -42,7 +67,11 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-handlebars');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     // By default, lint and run all tests.
     grunt.registerTask('default', ['clean', 'handlebars', 'watch']);
+    grunt.registerTask('build', ['concat','cssmin','uglify']);
 };
