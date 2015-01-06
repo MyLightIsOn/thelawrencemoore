@@ -9,7 +9,9 @@ z-index
 ****************************/
 #about-page {
   background-color: #db7f24;
-  font-size: 22px;
+}
+#about-page h5 {
+  font-size: 18px;
 }
 #about-page header {
   background: url("../img/about_small.jpg") no-repeat center;
@@ -27,7 +29,7 @@ z-index
     padding: 0;
   }
 }
-#about-page .page-wrapper {
+#about-page .page-header .gradient {
   background: linear-gradient(to bottom, rgba(219, 127, 36, 0) 0%, #db7f24 44%);
   background: -webkit-linear-gradient(top, rgba(219, 127, 36, 0) 0%, #db7f24 44%);
 }
@@ -229,7 +231,9 @@ z-index
 @media (min-width: 1282px) {
   #about-page {
     background-color: #db7f24;
-    font-size: 22px;
+  }
+  #about-page h5 {
+    font-size: 30px;
   }
   #about-page .about-me {
     color: #ffffff;

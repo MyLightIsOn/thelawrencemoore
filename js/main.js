@@ -1,3 +1,5 @@
+
+
 $(function(){
     var wrapper = $('#wrapper');
     var screen = $('body, html');
@@ -39,14 +41,18 @@ $(function(){
 
         var iconContainer = $(this).find('.icon-container');
         var tileTitle = $(this).find('.tile-title');
+        var tileBackground = $(this).find('.tile-background');
         var thisIconOff = $(this).find('.icon');
         var thisIconOn = $(this).find('.icon-on');
 
         $(iconContainer).stop().animate({
             backgroundColor: color
         });
+        $(tileBackground).stop().animate({
+            width: 11 + "%"
+        });
         $(tileTitle).stop().animate({
-            color: color
+            opacity: 1
         });
         $(thisIconOff).stop().animate({
             top: -92
@@ -58,14 +64,18 @@ $(function(){
     }, function(){
         var iconContainer = $(this).find('.icon-container');
         var tileTitle = $(this).find('.tile-title');
+        var tileBackground = $(this).find('.tile-background');
         var thisIconOff = $(this).find('.icon');
         var thisIconOn = $(this).find('.icon-on');
 
         $(iconContainer).stop().animate({
             backgroundColor: '#ffffff'
         });
+        $(tileBackground).stop().animate({
+            width: 0
+        });
         $(tileTitle).stop().animate({
-            color: '#dbdbdb'
+            opacity: 0.2
         });
         $(thisIconOff).stop().animate({
             top: 0
@@ -131,12 +141,13 @@ $(function(){
                         overflow: 'visible'
                     });
 
-                    $(fixedWidthDiv).css({
+                    /*$(fixedWidthDiv).css({
                         paddingTop: bottom - 550
-                    });
+                    });*/
 
                     //Creates the scroll effect for the inner pages and fades it in
-                    $(window).one('scroll', function(){
+                    /*$(window).one('scroll', function(){*/
+                    //Removed Scrolling Reveal function
 
                         if(screenWidth >= 1282){
                             $(activePage).find('.page-wrapper').animate({
@@ -145,14 +156,14 @@ $(function(){
                             });
 
                             //Places the page text below the header quote author
-                            $(pageContent).css({
-                                top: bottom + 250
-                            });
+                            /*$(pageContent).css({
+                                top: bottom + 10
+                            });*/
 
                             //Page text moves up and fades in
                             $(pageContent).animate({
-                                opacity: 1,
-                                top: 425
+                                opacity: 1
+                                /*top: 425*/
                             });
                         }
                         //Header text gets a higher z-index so it stays above the gradient
@@ -162,7 +173,7 @@ $(function(){
                         $(headerBottom).css({
                             zIndex: 100
                         });
-                    });
+                    /*});*/
 
                     if(screenWidth < 1282){
                         $(activePage).find('.page-wrapper').css({
@@ -172,14 +183,14 @@ $(function(){
 
                         //Places the page text below the header quote author
                         $(pageContent).css({
-                            top: bottom + 130
+                            /*top: bottom + 130*/
                         });
 
                         //Page text moves up and fades in
                         $(pageContent).css({
-                            opacity: 1,
-                            top: bottom + 30,
-                            paddingTop: 30
+                            opacity: 1
+                            /*top: bottom + 30,
+                            paddingTop: 30*/
                         });
 
                         //Header text gets a higher z-index so it stays above the gradient

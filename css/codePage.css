@@ -10,6 +10,9 @@ z-index
 #code-page {
   background-color: #1a7287;
 }
+#code-page h5 {
+  font-size: 18px;
+}
 #code-page header {
   background: url("../img/code_small.jpg") no-repeat center;
   background-size: cover;
@@ -22,7 +25,7 @@ z-index
     padding-top: 60px;
   }
 }
-#code-page .page-wrapper {
+#code-page .page-header .gradient {
   background: linear-gradient(to bottom, rgba(26, 114, 135, 0) 0%, #1a7287 44%);
   background: -webkit-linear-gradient(top, rgba(26, 114, 135, 0) 0%, #1a7287 44%);
 }
@@ -48,6 +51,9 @@ z-index
   padding-bottom: 130px;
 }
 @media (min-width: 1282px) {
+  #code-page h5 {
+    font-size: 30px;
+  }
   #code-page header {
     background: url("../img/code_large.jpg") no-repeat center;
     background-size: cover;
