@@ -7,69 +7,104 @@ fonts
 /****************************
 z-index
 ****************************/
-#code-page {
-  background-color: #1a7287;
-}
-#code-page h5 {
-  font-size: 18px;
-}
-#code-page header {
-  background: url("../img/code_small.jpg") no-repeat center;
-  background-size: cover;
-}
-#code-page .intro-text {
-  padding-top: 40px;
-}
-@media (min-width: 1282px) and (max-width: 1420px) {
-  #code-page .intro-text {
-    padding-top: 60px;
-  }
-}
-#code-page .page-header .gradient {
-  background: linear-gradient(to bottom, rgba(26, 114, 135, 0) 0%, #1a7287 44%);
-  background: -webkit-linear-gradient(top, rgba(26, 114, 135, 0) 0%, #1a7287 44%);
-}
-#code-page .page-content {
-  background-color: #1a7287;
-}
-#code-page .image-container {
-  border: 5px solid #27abcb;
-  margin-right: 17px;
-}
-#code-page .view {
-  background-color: #1ba33f;
-  text-decoration: none;
-  left: 295px;
-}
-#code-page .view:hover {
-  background-color: #27abcb;
-}
-#code-page .git {
-  left: 520px;
-}
-#code-page .example:last-child {
-  padding-bottom: 130px;
-}
-@media (min-width: 1282px) {
-  #code-page h5 {
-    font-size: 30px;
-  }
-  #code-page header {
-    background: url("../img/code_large.jpg") no-repeat center;
-    background-size: cover;
-  }
-  #code-page .image-container {
-    border: 10px solid #27abcb;
-    margin-right: 50px;
-  }
-}
+/***************************************************************
+*   Home Tile - Code
+****************************************************************/
 .code .tile-title {
-  top: 13px;
-  left: -21px;
+  top: 14px;
+  left: -19px;
+}
+@media (min-width: 768px) and (max-width: 1281px) {
+  .code .tile-title {
+    left: -33px;
+    top: 23px;
+  }
 }
 @media (min-width: 1282px) {
   .code .tile-title {
-    left: -66px;
-    top: 44px;
+    left: -68px;
+    top: 48px;
   }
 }
+/*#code-page {
+    background-color: @blue;
+
+    header {
+        background: url("../img/code_small.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .intro-text {
+        padding-top: 40px;
+    }
+
+    @media (min-width: 1282px) and (max-width: 1420px) {
+
+        .intro-text {
+            padding-top: 60px;
+        }
+    }
+
+
+    .page-wrapper {
+        background: linear-gradient(to bottom, rgba(26,114,135,0) 0%,rgba(26,114,135,1) 44%);
+        background: -webkit-linear-gradient(top, rgba(26,114,135,0) 0%,rgba(26,114,135,1) 44%);
+    }
+
+    .page-content {
+        background-color: @blue;
+    }
+
+    .image-container {
+        border: 5px solid @light-blue;
+        margin-right: 17px;
+    }
+
+
+    .view {
+        background-color: @green;
+        text-decoration: none;
+        left: 295px;
+    }
+
+    .view:hover {
+        background-color: @light-blue
+    }
+
+    .git {
+        left: 520px;
+    }
+
+    .example:last-child {
+        padding-bottom: 130px;
+    }
+
+    @media (min-width: 1282px) {
+
+        header {
+            background: url("../img/code_large.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        .image-container {
+            border: 10px solid @light-blue;
+            margin-right: 50px;
+        }
+    }
+}
+
+.code {
+
+    .tile-title {
+        top: 13px;
+        left: -21px;
+    }
+
+    @media (min-width: 1282px) {
+
+        .tile-title {
+            left: -66px;
+            top: 44px;
+        }
+    }
+}*/

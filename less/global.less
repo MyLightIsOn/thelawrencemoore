@@ -103,6 +103,8 @@ html, body {
     font-size: 20px;
 
     color: @light-grey;
+    opacity: 0.2;
+    z-index: 10;
     -webkit-transform: rotate(90deg);   /* Safari */
     -moz-transform: rotate(90deg);  /* Firefox */
     -ms-transform: rotate(90deg); /* IE */
@@ -214,6 +216,14 @@ footer {
     .close-page:hover {
         color: @white;
         background-color: @dark-grey;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1281px){
+    .tile-title {
+        font-size: 35px;
+        top: 70px;
+        z-index: 10;
     }
 }
 

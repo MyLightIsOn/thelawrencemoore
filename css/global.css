@@ -47,12 +47,8 @@ body {
   overflow: hidden;
 }
 .content-page header {
-  padding: 30px 0 0;
-}
-.content-page header .gradient {
-  width: 100%;
-  height: 100%;
-  padding: 0 12% 75px;
+  padding: 30px 7% 20px;
+  height: 52%;
 }
 .content-page header h1 {
   color: #ffffff;
@@ -87,30 +83,30 @@ body {
 .content-page .page-wrapper {
   width: 100%;
   height: 100%;
-  /*position: absolute;
-        top: 150px;*/
+  position: absolute;
+  top: 150px;
   opacity: 0;
 }
 .tile-title {
   display: block;
   position: absolute;
   font-size: 20px;
-  color: #ffffff;
+  color: #dbdbdb;
+  opacity: 0.2;
+  z-index: 10;
   -webkit-transform: rotate(90deg);
   /* Safari */
   -moz-transform: rotate(90deg);
   /* Firefox */
   -ms-transform: rotate(90deg);
   /* IE */
-  z-index: 10;
-  opacity: 0.2;
 }
 .section-title {
   font-size: 25px;
   color: #ffffff;
 }
 .intro-text {
-  padding: 0 7% 0;
+  padding: 0 7%;
 }
 .button-container {
   margin-left: 0px;
@@ -194,6 +190,13 @@ footer .close-page:hover {
   color: #ffffff;
   background-color: #686868;
 }
+@media (min-width: 768px) and (max-width: 1281px) {
+  .tile-title {
+    font-size: 35px;
+    top: 70px;
+    z-index: 10;
+  }
+}
 @media (min-width: 1282px) {
   .fixed-width {
     width: 1280px;
@@ -203,11 +206,9 @@ footer .close-page:hover {
   .button-container {
     margin-left: 251px;
   }
-  .intro-text {
-    padding: 60px 7% 0;
-  }
   .content-page header {
-    padding: 110px 0 0;
+    padding: 110px 12% 20px;
+    height: 150%;
   }
   .content-page header h1 {
     font-size: 70px;

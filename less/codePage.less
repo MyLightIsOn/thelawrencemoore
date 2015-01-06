@@ -1,6 +1,33 @@
 @import url('variables.less');
 
-#code-page {
+/***************************************************************
+*   Home Tile - Code
+****************************************************************/
+.code {
+
+    .tile-title {
+        top: 14px;
+        left: -19px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1281px){
+
+        .tile-title {
+            left: -33px;
+            top: 23px;
+        }
+    }
+
+    @media (min-width: 1282px)  {
+
+        .tile-title {
+            left: -68px;
+            top: 48px;
+        }
+    }
+}
+
+/*#code-page {
     background-color: @blue;
 
     header {
@@ -81,4 +108,4 @@
             top: 44px;
         }
     }
-}
+}*/

@@ -1,5 +1,62 @@
 @import url('variables.less');
 
+/***************************************************************
+*   Home Tile - About
+****************************************************************/
+.about {
+
+    .tile-title {
+        top: 20px;
+        left: -23px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1281px){
+
+        .tile-title {
+            left: -41px;
+            top: 33px;
+        }
+    }
+
+    @media (min-width: 1282px)  {
+
+        .tile-title {
+            left: -83px;
+            top: 62px;
+        }
+    }
+
+}
+
+/***************************************************************
+*   Mobile
+****************************************************************/
+#about-page {
+    background-color: @orange;
+    font-size: 22px;
+
+    header {
+        background: url("../img/about_small.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .working p{
+        padding: 0 7%;
+    }
+
+    .page-wrapper {
+        background: linear-gradient(to bottom, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 44%);
+        background: -webkit-linear-gradient(top, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 44%);
+    }
+
+    .page-content {
+        background-color: @orange;
+    }
+}
+
+/*
+@import url('variables.less');
+
 #about-page {
     background-color: @orange;
     font-size: 22px;
@@ -456,3 +513,4 @@
         }
     }
 }
+*/
