@@ -14,7 +14,7 @@ z-index
   top: 22px;
   left: -25px;
 }
-@media (min-width: 768px) and (max-width: 1281px) {
+@media (min-width: 512px) and (max-width: 1281px) {
   .design .tile-title {
     left: -46px;
     top: 38px;

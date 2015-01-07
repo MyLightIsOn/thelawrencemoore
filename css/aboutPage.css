@@ -14,7 +14,7 @@ z-index
   top: 20px;
   left: -23px;
 }
-@media (min-width: 768px) and (max-width: 1281px) {
+@media (min-width: 512px) and (max-width: 1281px) {
   .about .tile-title {
     left: -41px;
     top: 33px;
@@ -30,7 +30,7 @@ z-index
 *   Mobile
 ****************************************************************/
 #about-page {
-  background-color: #db7f24;
+  color: #ffffff;
   font-size: 22px;
 }
 #about-page header {
@@ -41,11 +41,466 @@ z-index
   padding: 0 7%;
 }
 #about-page .page-wrapper {
-  background: linear-gradient(to bottom, rgba(219, 127, 36, 0) 0%, #db7f24 44%);
-  background: -webkit-linear-gradient(top, rgba(219, 127, 36, 0) 0%, #db7f24 44%);
+  background: linear-gradient(to bottom, rgba(219, 127, 36, 0) 0%, #db7f24 23%);
+  background: -webkit-linear-gradient(top, rgba(219, 127, 36, 0) 0%, #db7f24 23%);
 }
 #about-page .page-content {
+  padding-top: 40px;
   background-color: #db7f24;
+}
+#about-page table.who-I-am {
+  padding: 18px 0 42px;
+  margin: 60px auto 18px;
+  border-top: 3px solid #ffffff;
+  border-bottom: 3px solid #ffffff;
+}
+#about-page table.who-I-am .about-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+#about-page table.who-I-am td {
+  padding: 10px 0px;
+  position: relative;
+}
+#about-page table.who-I-am .light-bulb {
+  display: block;
+  width: 100%;
+  min-height: 50px;
+  position: relative;
+  top: -5px;
+  padding-left: 81px;
+}
+#about-page table.who-I-am .light-bulb.light-on:before {
+  width: 62px;
+  height: 50px;
+  content: '';
+  background: url('../img/icons.png') no-repeat -23px -274px;
+  position: absolute;
+  left: 0;
+}
+#about-page table.who-I-am .light-bulb.light-off:before {
+  width: 62px;
+  height: 50px;
+  content: '';
+  background: url('../img/icons.png') no-repeat -110px -274px;
+  position: absolute;
+  left: 0;
+}
+#about-page .weapons-section.desktop {
+  display: none;
+}
+#about-page .weapons-section.mobile {
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  border-bottom: 3px solid #ffffff;
+  width: 100%;
+}
+#about-page .weapons-section.mobile table {
+  margin: 15px auto 60px;
+}
+#about-page .weapons-section.mobile table td {
+  width: 105px;
+  vertical-align: text-top;
+}
+#about-page .weapons-section.mobile .weapons-icon {
+  width: 105px;
+  height: 105px;
+  display: block;
+  position: relative;
+  margin: 20px auto 0;
+}
+#about-page .weapons-section.mobile .weapons-name {
+  padding-bottom: 30px;
+}
+#about-page .weapons-section.mobile .weapons-icon.html {
+  content: '';
+  background: url("../img/icons.png") no-repeat -6px -248px;
+  background-size: 650px;
+}
+#about-page .weapons-section.mobile .weapons-icon.css {
+  content: '';
+  background: url("../img/icons.png") no-repeat -138px -248px;
+  background-size: 650px;
+}
+#about-page .weapons-section.mobile .weapons-icon.javascript {
+  content: '';
+  background: url("../img/icons.png") no-repeat -268px -248px;
+  background-size: 650px;
+}
+#about-page .weapons-section.mobile .weapons-icon.jquery {
+  content: '';
+  background: url("../img/icons.png") no-repeat -398px -248px;
+  background-size: 650px;
+}
+#about-page .weapons-section.mobile .weapons-icon.less {
+  content: '';
+  background: url("../img/icons.png") no-repeat -528px -248px;
+  background-size: 650px;
+}
+#about-page .weapons-section.mobile .weapons-icon.webstorm {
+  content: '';
+  background: url("../img/icons.png") no-repeat -6px -385px;
+  background-size: 650px;
+}
+#about-page .weapons-section.mobile .weapons-icon.photoshop {
+  content: '';
+  background: url("../img/icons.png") no-repeat -138px -385px;
+  background-size: 650px;
+}
+#about-page .weapons-section.mobile .weapons-icon.axure {
+  content: '';
+  background: url("../img/icons.png") no-repeat -268px -385px;
+  background-size: 650px;
+}
+#about-page .weapons-section.mobile .weapons-icon.chrome {
+  content: '';
+  background: url("../img/icons.png") no-repeat -398px -385px;
+  background-size: 650px;
+}
+#about-page .weapons-section.mobile .weapons-icon.imagination {
+  content: '';
+  background: url("../img/icons.png") no-repeat -528px -385px;
+  background-size: 650px;
+}
+#about-page .time-section {
+  padding: 18px 0 30px;
+  border-bottom: 3px solid #ffffff;
+  position: relative;
+}
+#about-page .time-section .section-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+}
+#about-page .time-section img {
+  width: 90%;
+  max-width: 486px;
+  margin: auto;
+  display: block;
+}
+#about-page .time-section table {
+  margin: 19px auto 0;
+}
+#about-page .time-section table td {
+  vertical-align: middle;
+}
+#about-page .time-section .red {
+  background-color: #db3a24;
+}
+#about-page .time-section .blue {
+  background-color: #1a7287;
+}
+#about-page .time-section .green {
+  background-color: #1ba33f;
+}
+#about-page .time-section .yellow {
+  background-color: #daaf20;
+}
+#about-page .time-section .grey {
+  background-color: #c0c0c0;
+}
+#about-page .chart-color {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 6px 12px 6px 0;
+}
+#about-page .working {
+  position: relative;
+  padding: 18px 0 120px;
+}
+#about-page .working .section-title {
+  display: block;
+  text-align: center;
+  margin-bottom: 62px;
+}
+#about-page .working .large-light {
+  display: none;
+  width: 324px;
+  height: 268px;
+  position: absolute;
+  right: 0;
+  top: 190px;
+}
+#about-page .working .large-light:after {
+  content: '';
+  display: block;
+  width: 324px;
+  height: 268px;
+  background: url("../img/icons.png") no-repeat -634px -35px;
+  position: absolute;
+}
+#about-page .working p {
+  width: 100%;
+  display: block;
+}
+@media (max-width: 520px) {
+  table.who-I-am.mobile {
+    display: table;
+  }
+  table.who-I-am.desktop {
+    display: none;
+  }
+}
+/***************************************************************
+*   Tablet
+****************************************************************/
+@media (min-width: 512px) and (max-width: 1281px) {
+  #about-page .page-wrapper {
+    background: linear-gradient(to bottom, rgba(219, 127, 36, 0) 0%, #db7f24 18%);
+    background: -webkit-linear-gradient(top, rgba(219, 127, 36, 0) 0%, #db7f24 18%);
+  }
+  #about-page .section-title {
+    font-size: 40px;
+  }
+  #about-page table.who-I-am.desktop {
+    width: 80%;
+    font-size: 22px;
+  }
+  #about-page table.who-I-am.desktop td {
+    position: relative;
+  }
+  #about-page table.who-I-am.desktop td.raleway {
+    padding: 0;
+  }
+  #about-page table.who-I-am.desktop .light-bulb {
+    display: block;
+    width: 62px;
+    height: 50px;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    top: -5px;
+  }
+  #about-page table.who-I-am.desktop .light-bulb.light-on:before {
+    width: 62px;
+    height: 50px;
+    content: '';
+    background: url('../img/icons.png') no-repeat -23px -274px;
+    position: absolute;
+    left: 23px;
+  }
+  #about-page table.who-I-am.desktop .light-bulb.light-off:before {
+    width: 62px;
+    height: 50px;
+    content: '';
+    background: url('../img/icons.png') no-repeat -110px -274px;
+    position: absolute;
+    left: 32px;
+  }
+  #about-page .weapons-section.mobile {
+    display: none;
+  }
+  #about-page .weapons-section.desktop {
+    display: block;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    border-bottom: 3px solid #ffffff;
+  }
+  #about-page .time-section {
+    height: 720px;
+    padding: 40px 0 30px;
+    border-bottom: 3px solid #ffffff;
+    position: relative;
+  }
+  #about-page .time-section .section-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  #about-page .time-section img {
+    width: 44%;
+    max-width: 486px;
+    position: absolute;
+    left: 0;
+  }
+  #about-page .time-section table {
+    margin-top: 94px;
+    position: absolute;
+    right: 0;
+  }
+  #about-page .time-section table td {
+    vertical-align: middle;
+  }
+  #about-page .working {
+    padding: 44px 0 120px;
+  }
+  #about-page .working .large-light {
+    display: block;
+    width: 324px;
+    height: 268px;
+    position: absolute;
+    right: 0;
+    top: 190px;
+  }
+  #about-page .working p {
+    width: 64%;
+  }
+}
+@media (min-width: 1081px) and (max-width: 1281px) {
+  table.who-I-am.mobile {
+    display: none;
+  }
+  table.who-I-am.desktop {
+    display: table;
+  }
+}
+@media (min-width: 512px) and (max-width: 1080px) {
+  table.who-I-am.mobile {
+    display: table;
+  }
+  table.who-I-am.desktop {
+    display: none;
+  }
+}
+@media (min-width: 901px) and (max-width: 1281px) {
+  .weapons-section table {
+    width: 85%;
+    margin: 30px auto 15px;
+  }
+  .weapons-section table img {
+    width: 90%;
+    max-width: 166px;
+    max-height: 166px;
+  }
+  .weapons-section table .weapons-name {
+    width: 20%;
+    padding-bottom: 30px;
+  }
+  .weapons-section table span {
+    font-size: 22px;
+  }
+}
+@media (min-width: 661px) and (max-width: 900px) {
+  .weapons-section table {
+    width: 85%;
+    margin: 30px auto 15px;
+  }
+  .weapons-section table img {
+    width: 90%;
+    max-width: 166px;
+    max-height: 166px;
+  }
+  .weapons-section table .weapons-name {
+    width: 20%;
+    min-width: 120px;
+    padding-bottom: 30px;
+  }
+  .weapons-section table img {
+    width: 75%;
+  }
+  .weapons-section table span {
+    font-size: 19px;
+  }
+}
+@media (min-width: 512px) and (max-width: 660px) {
+  .weapons-section table {
+    width: 100%;
+    margin: 30px auto 15px;
+  }
+  .weapons-section table img {
+    width: 90%;
+    max-width: 166px;
+    max-height: 166px;
+  }
+  .weapons-section table .weapons-name {
+    width: 20%;
+    padding-bottom: 30px;
+  }
+  .weapons-section table .weapons-name span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+  }
+  .weapons-section table img {
+    width: 75%;
+  }
+}
+/***************************************************************
+*   Desktop
+****************************************************************/
+@media (min-width: 1281px) {
+  #about-page header {
+    background: url("../img/about_large.jpg") no-repeat center;
+    background-size: cover;
+  }
+  #about-page .page-content {
+    padding-top: 0;
+    top: 175px;
+  }
+  #about-page .page-wrapper {
+    background: linear-gradient(to bottom, rgba(219, 127, 36, 0) 0%, #db7f24 18%);
+    background: -webkit-linear-gradient(top, rgba(219, 127, 36, 0) 0%, #db7f24 18%);
+  }
+  #about-page .content-page header h1,
+  #about-page .section-title {
+    font-size: 40px;
+  }
+  #about-page table.who-I-am.mobile {
+    display: none;
+  }
+  #about-page table.who-I-am.desktop td.raleway {
+    padding: 0;
+  }
+  #about-page .weapons-section.mobile {
+    display: none;
+  }
+  #about-page .weapons-section.desktop {
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-family: 'Archivo Black', sans-serif;
+    border-bottom: 3px solid #ffffff;
+  }
+  #about-page .weapons-section.desktop table {
+    display: table;
+    text-align: center;
+    margin: 45px auto;
+  }
+  #about-page .weapons-section.desktop td {
+    width: 166px;
+  }
+  #about-page .weapons-section.desktop td img {
+    margin: 0 15px;
+  }
+  #about-page .time-section {
+    height: 720px;
+    padding: 40px 0 30px;
+    border-bottom: 3px solid #ffffff;
+    position: relative;
+  }
+  #about-page .time-section .section-title {
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  #about-page .time-section img {
+    width: 44%;
+    max-width: 486px;
+    position: absolute;
+    left: 0;
+  }
+  #about-page .time-section table {
+    margin-top: 94px;
+    position: absolute;
+    right: 0;
+  }
+  #about-page .time-section table td {
+    vertical-align: middle;
+  }
+  #about-page .working {
+    padding: 44px 0 120px;
+  }
+  #about-page .working .large-light {
+    display: block;
+    width: 324px;
+    height: 268px;
+    position: absolute;
+    right: 0;
+    top: 190px;
+  }
+  #about-page .working p {
+    width: 64%;
+  }
 }
 /*
 @import url('variables.less');

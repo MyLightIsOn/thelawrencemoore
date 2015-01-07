@@ -1,8 +1,8 @@
 
 
 $(function(){
-    var wrapper = $('#wrapper');
-    var screen = $('body, html');
+    var wrapper = $('#wrapper'),
+        screen = $('body, html');
 
     //Loads templates for homepage
     $(wrapper).append(JST.about);
@@ -39,18 +39,26 @@ $(function(){
             color = '#db3a24'
         }
 
-        var iconContainer = $(this).find('.icon-container');
-        var tileTitle = $(this).find('.tile-title');
-        var tileBackground = $(this).find('.tile-background');
-        var thisIconOff = $(this).find('.icon');
-        var thisIconOn = $(this).find('.icon-on');
+        var iconContainer = $(this).find('.icon-container'),
+            tileTitle = $(this).find('.tile-title'),
+            tileBackground = $(this).find('.tile-background'),
+            thisIconOff = $(this).find('.icon'),
+            thisIconOn = $(this).find('.icon-on');
 
         $(iconContainer).stop().animate({
             backgroundColor: color
         });
-        $(tileBackground).stop().animate({
-            width: 11 + "%"
-        });
+
+        if(screen.width() >= 1282){
+            $(tileBackground).stop().animate({
+                width: 11 + "%"
+            });
+        } else {
+            $(tileBackground).stop().animate({
+                width: 13 + "%"
+            });
+        }
+
         $(tileTitle).stop().animate({
             opacity: 1
         });
@@ -62,11 +70,11 @@ $(function(){
         });
 
     }, function(){
-        var iconContainer = $(this).find('.icon-container');
-        var tileTitle = $(this).find('.tile-title');
-        var tileBackground = $(this).find('.tile-background');
-        var thisIconOff = $(this).find('.icon');
-        var thisIconOn = $(this).find('.icon-on');
+        var iconContainer = $(this).find('.icon-container'),
+            tileTitle = $(this).find('.tile-title'),
+            tileBackground = $(this).find('.tile-background'),
+            thisIconOff = $(this).find('.icon'),
+            thisIconOn = $(this).find('.icon-on');
 
         $(iconContainer).stop().animate({
             backgroundColor: '#ffffff'
@@ -116,12 +124,12 @@ $(function(){
             for(i; i < contentPages.length; ++i){
                 if(($(contentPages[i]).attr('id').split('-')[0]) == selectedClassIsolate){
 
-                    var activePage = contentPages[i];
-                    var pageContent = $(activePage).find('.page-content');
-                    var headerText =  $(activePage).find('.page-header h1');
-                    var headerBottom = $(activePage).find('.page-header h5');
-                    var bottom = $(headerBottom).position().top+$(headerBottom).outerHeight(true);
-                    var fixedWidthDiv = $(activePage).find('.fixed-width');
+                    var activePage = contentPages[i],
+                        pageContent = $(activePage).find('.page-content'),
+                        pageWrapper = $(activePage).find('.page-content').parent(),
+                        pageHeader = $(activePage).find('.page-header'),
+                        headerText =  $(activePage).find('.page-header h1'),
+                        headerBottom = $(activePage).find('.page-header h5');
 
                     //Adds active page class to the selected page
                     $(activePage).addClass('active-page');
@@ -141,31 +149,23 @@ $(function(){
                         overflow: 'visible'
                     });
 
-                    /*$(fixedWidthDiv).css({
-                        paddingTop: bottom - 550
-                    });*/
 
-                    //Creates the scroll effect for the inner pages and fades it in
-                    /*$(window).one('scroll', function(){*/
-                    //Removed Scrolling Reveal function
+                    //Checks to see if the screen is bigger than the desktop media query
+                    if(screenWidth >= 1282){
+                        $(activePage).find('.page-wrapper').animate({
+                            opacity: 1
+                        });
 
-                        if(screenWidth >= 1282){
-                            $(activePage).find('.page-wrapper').animate({
-                                opacity: 1
-                                /*top: bottom*/
-                            });
+                        //Places the page text below the header quote author
+                        $(pageWrapper).css({
+                            top:  pageHeader.height() - (pageHeader.height()/2)
+                        });
 
-                            //Places the page text below the header quote author
-                            /*$(pageContent).css({
-                                top: bottom + 10
-                            });*/
+                        //Page text moves up and fades in
+                        $(pageContent).animate({
+                            opacity: 1
+                        });
 
-                            //Page text moves up and fades in
-                            $(pageContent).animate({
-                                opacity: 1
-                                /*top: 425*/
-                            });
-                        }
                         //Header text gets a higher z-index so it stays above the gradient
                         $(headerText).css({
                             zIndex: 100
@@ -173,8 +173,9 @@ $(function(){
                         $(headerBottom).css({
                             zIndex: 100
                         });
-                    /*});*/
+                    }
 
+                    //Checks to see if the screen is smaller than the desktop media query
                     if(screenWidth < 1282){
                         $(activePage).find('.page-wrapper').css({
                             opacity: 1,
@@ -183,14 +184,16 @@ $(function(){
 
                         //Places the page text below the header quote author
                         $(pageContent).css({
-                            /*top: bottom + 130*/
+                            top: pageHeader.height() - 68
                         });
 
                         //Page text moves up and fades in
                         $(pageContent).css({
                             opacity: 1
-                            /*top: bottom + 30,
-                            paddingTop: 30*/
+                        });
+
+                        $(pageWrapper).css({
+                            top: pageHeader.height() - 68
                         });
 
                         //Header text gets a higher z-index so it stays above the gradient
@@ -200,7 +203,6 @@ $(function(){
                         $(headerBottom).css({
                             zIndex: 100
                         });
-
                         //Hides my name
                         $('.myName').css({
                             display: "none"

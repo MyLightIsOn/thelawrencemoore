@@ -46,9 +46,45 @@ body {
   opacity: 0;
   overflow: hidden;
 }
+.content-page h1 {
+  color: #ffffff;
+  font-family: 'Archivo Black', sans-serif;
+  margin-bottom: 30px;
+  position: relative;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+.content-page h5 {
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  position: absolute;
+  right: 9%;
+}
+/***************************************************************
+*   Mobile
+****************************************************************/
+.tile-title {
+  display: block;
+  position: absolute;
+  font-size: 20px;
+  color: #dbdbdb;
+  opacity: 0.2;
+  z-index: 10;
+  -webkit-transform: rotate(90deg);
+  /* Safari */
+  -moz-transform: rotate(90deg);
+  /* Firefox */
+  -ms-transform: rotate(90deg);
+  /* IE */
+}
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 150px;
+  opacity: 0;
+}
 .content-page header {
-  padding: 30px 7% 20px;
-  height: 52%;
+  padding: 30px 7% 55px;
 }
 .content-page header h1 {
   color: #ffffff;
@@ -79,13 +115,6 @@ body {
 }
 .content-page .page-content .text {
   padding: 0 7%;
-}
-.content-page .page-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 150px;
-  opacity: 0;
 }
 .tile-title {
   display: block;
@@ -190,13 +219,22 @@ footer .close-page:hover {
   color: #ffffff;
   background-color: #686868;
 }
-@media (min-width: 768px) and (max-width: 1281px) {
+/***************************************************************
+*   Tablet
+****************************************************************/
+@media (min-width: 512px) and (max-width: 1281px) {
   .tile-title {
     font-size: 35px;
     top: 70px;
     z-index: 10;
   }
+  .content-page header h1 {
+    font-size: 50px;
+  }
 }
+/***************************************************************
+*   Desktop
+****************************************************************/
 @media (min-width: 1282px) {
   .fixed-width {
     width: 1280px;
@@ -208,7 +246,7 @@ footer .close-page:hover {
   }
   .content-page header {
     padding: 110px 12% 20px;
-    height: 150%;
+    height: 120%;
   }
   .content-page header h1 {
     font-size: 70px;
@@ -301,3 +339,353 @@ footer .close-page:hover {
     background-size: 658px;
   }
 }
+/*
+
+*/
+/***************************************************************
+*   Old Styles
+****************************************************************/
+/*
+
+#wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.fixed-width {
+    position: relative;
+    padding-bottom: 150px;
+}
+
+.content-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    z-index: @back;
+    opacity: 0;
+    overflow: hidden;
+
+    header {
+        */
+/*padding: 30px 7% 20px;*/
+/*
+
+        */
+/*height: 52%;*/
+/*
+
+
+        h1 {
+            color: @white;
+            font-family: @archivo;
+            font-size: 30px;
+            margin-bottom: 30px;
+            position: relative;
+
+            text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+            0px 8px 13px rgba(0,0,0,0.1),
+            0px 18px 23px rgba(0,0,0,0.1);
+        }
+
+        h5 {
+            color: @white;
+            font-family: @raleway;
+            position: absolute;
+            right: 9%;
+        }
+    }
+    .page-content {
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        opacity: 0;
+
+        p {
+            color: @white;
+            font-family: @raleway;
+            font-size: 22px;
+
+            line-height: 31px;
+            margin-bottom: 40px;
+        }
+
+        .text {
+            padding: 0 7%;
+        }
+    }
+
+}
+
+.tile-title {
+    display: block;
+    position: absolute;
+    font-size: 20px;
+
+    color: @light-grey;
+    opacity: 0.2;
+    z-index: 10;
+    -webkit-transform: rotate(90deg);   */
+/* Safari */
+/*
+
+    -moz-transform: rotate(90deg);  */
+/* Firefox */
+/*
+
+    -ms-transform: rotate(90deg); */
+/* IE */
+/*
+
+}
+
+.section-title {
+    font-size: 25px;
+    color: @white;
+}
+
+.intro-text {
+    padding: 0 7%;
+}
+
+.button-container {
+    margin-left: 0px;
+}
+
+.example-wrapper {
+    margin-top: 87px;
+}
+
+.example {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    float: left;
+
+    border-top: 3px solid #fff;
+
+    .example-title {
+        color: @white;
+        margin-bottom: 10px;
+    }
+
+    .view {
+        display: inline-block;
+        padding: 12px 33px;
+
+        background-color: @blue;
+        border-radius: 24px;
+        color: @white;
+        cursor: pointer;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .view:hover {
+        background-color: @light-blue;
+    }
+
+    .text {
+        height: auto;
+    }
+    .image-container {
+        min-width: 140px;
+        min-height: 140px;
+        width: 24%;
+
+        float: left;
+        margin-right: 50px;
+        margin-left: 7%;
+        overflow: hidden;
+    }
+    .example-image {
+        width: 100%;
+        float: left;
+    }
+}
+
+
+footer {
+    width: 100%;
+    bottom: 5px;
+    padding:0 15px 0 5px;
+    position: fixed;
+
+    //Removes Chrome flickering problem
+    -webkit-backface-visibility:hidden;
+    -webkit-transform: translateZ(0);
+
+    font-size: 10px;
+    z-index: @peak;
+    span {
+        display: inline-block;
+    }
+    .myName {
+        color: @dark-grey;
+        margin-right: 15px;
+    }
+    .myJob {
+        color: @grey;
+    }
+
+    .close-page {
+        width: 190px;
+        display: block;
+        bottom: 9px;
+        padding: 14px 38px;
+        margin: 0 auto;
+
+        background-color: @grey;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 15px;
+        opacity: 0;
+    }
+
+    .close-page:hover {
+        color: @white;
+        background-color: @dark-grey;
+    }
+}
+
+@media (min-width: 512px) and (max-width: 1281px){
+    .tile-title {
+        font-size: 35px;
+        top: 70px;
+        z-index: 10;
+    }
+}
+
+@media (min-width: 1282px) {
+
+    .fixed-width {
+        width: 1280px;
+        margin: 0 auto;
+        padding: 0 80px 150px 80px;
+    }
+
+    .button-container {
+        margin-left: 251px;
+    }
+
+    .content-page {
+
+        header {
+            padding: 110px 12% 20px;
+            height: 150%;
+
+            h1 {
+                font-size: 70px;
+            }
+
+            h5 {
+                font-size: 30px;
+                right: 15%;
+            }
+        }
+
+        .page-content {
+
+            p {
+                margin-bottom: 23px;
+            }
+        }
+    }
+
+    .tile-title {
+        font-size: 70px;
+        top: 70px
+    }
+
+    .section-title {
+        font-size: 48px;
+    }
+
+    .example-wrapper {
+        margin-top: 87px;
+    }
+
+    .example {
+        height: 301px;
+        margin-bottom: 43px;
+        float: none;
+
+        .example-title {
+            color: @white;
+            margin-bottom: 10px;
+        }
+
+        .view {
+            display: inline-block;
+            padding: 12px 33px;
+
+            background-color: @blue;
+            border-radius: 24px;
+            color: @white;
+            cursor: pointer;
+        }
+
+        .view:hover {
+            background-color: @light-blue;
+        }
+
+        .text {
+            height: 265px;
+        }
+
+        .example-image {
+            float: left;
+            border-radius: 100%;
+        }
+
+        .image-container {
+            width: 24%;
+            border-radius: 100%;
+            float: left;
+            margin-right: 50px;
+            margin-left: 7%;
+            overflow: hidden;
+        }
+    }
+
+    .close-page {
+        display: block;
+        position: absolute;
+        right: 1000px;
+        bottom: 9px;
+        padding: 14px 55px;
+
+        background-color: @grey;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 20px;
+        opacity: 0;
+    }
+
+
+    footer {
+        display: block;
+        font-size: 15px;
+        padding-left: 72px;
+        bottom: 7px;
+        span {
+            display: block;
+        }
+        .myName {
+            margin-right: 0;
+        }
+    }
+
+    footer:before {
+        width: 50px;
+        height: 50px;
+        content: '';
+        display: block;
+        position: absolute;
+        left: 13px;
+        top: -5px;
+
+        background: url("../img/icons.png") -7px -164px no-repeat;
+        background-size: 658px;
+    }
+}*/

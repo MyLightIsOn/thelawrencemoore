@@ -10,7 +10,7 @@
         left: -23px;
     }
 
-    @media (min-width: 768px) and (max-width: 1281px){
+    @media (min-width: 512px) and (max-width: 1281px){
 
         .tile-title {
             left: -41px;
@@ -32,7 +32,7 @@
 *   Mobile
 ****************************************************************/
 #about-page {
-    background-color: @orange;
+    color: @white;
     font-size: 22px;
 
     header {
@@ -45,12 +45,567 @@
     }
 
     .page-wrapper {
-        background: linear-gradient(to bottom, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 44%);
-        background: -webkit-linear-gradient(top, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 44%);
+        background: linear-gradient(to bottom, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 23%);
+        background: -webkit-linear-gradient(top, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 23%);
     }
 
     .page-content {
+        padding-top: 40px;
+
         background-color: @orange;
+    }
+
+    table.who-I-am {
+        padding: 18px 0 42px;
+        margin: 60px auto 18px;
+        border-top: 3px solid @white;
+        border-bottom: 3px solid @white;
+
+        .about-title {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        td {
+            padding: 10px 0px;
+            position: relative;
+        }
+        .light-bulb {
+            display: block;
+            width: 100%;
+            min-height: 50px;
+            position: relative;
+            top: -5px;
+            padding-left: 81px;
+        }
+        .light-bulb.light-on:before {
+            width: 62px;
+            height: 50px;
+            content: '';
+            background: url('../img/icons.png') no-repeat -23px -274px;
+            position: absolute;
+            left: 0;
+        }
+        .light-bulb.light-off:before {
+            width: 62px;
+            height: 50px;
+            content: '';
+            background: url('../img/icons.png') no-repeat -110px -274px;
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    .weapons-section.desktop {
+        display: none;
+    }
+    .weapons-section.mobile {
+        text-align: center;
+        font-family: @archivo;
+        border-bottom: 3px solid @white;
+        width: 100%;
+
+        table {
+            margin: 15px auto 60px;
+
+
+            td {
+                width: 105px;
+                vertical-align: text-top;
+            }
+        }
+
+        .weapons-icon {
+            width: 105px;
+            height: 105px;
+            display: block;
+            position: relative;
+            margin: 20px auto 0;
+        }
+        .weapons-name {
+            padding-bottom: 30px;
+        }
+
+        .weapons-icon.html {
+            content: '';
+            background: url("../img/icons.png") no-repeat -6px -248px;
+            background-size: 650px;
+        }
+
+        .weapons-icon.css {
+            content: '';
+            background: url("../img/icons.png") no-repeat -138px -248px;
+            background-size: 650px;
+        }
+
+        .weapons-icon.javascript {
+            content: '';
+            background: url("../img/icons.png") no-repeat -268px -248px;
+            background-size: 650px;
+        }
+
+        .weapons-icon.jquery {
+            content: '';
+            background: url("../img/icons.png") no-repeat -398px -248px;
+            background-size: 650px;
+        }
+
+        .weapons-icon.less {
+            content: '';
+            background: url("../img/icons.png") no-repeat -528px -248px;
+            background-size: 650px;
+        }
+
+        .weapons-icon.webstorm {
+            content: '';
+            background: url("../img/icons.png") no-repeat -6px -385px;
+            background-size: 650px;
+        }
+
+        .weapons-icon.photoshop {
+            content: '';
+            background: url("../img/icons.png") no-repeat -138px -385px;
+            background-size: 650px;
+        }
+
+        .weapons-icon.axure {
+            content: '';
+            background: url("../img/icons.png") no-repeat -268px -385px;
+            background-size: 650px;
+        }
+        .weapons-icon.chrome {
+            content: '';
+            background: url("../img/icons.png") no-repeat -398px -385px;
+            background-size: 650px;
+        }
+        .weapons-icon.imagination {
+            content: '';
+            background: url("../img/icons.png") no-repeat -528px -385px;
+            background-size: 650px;
+        }
+    }
+
+    .time-section {
+        padding: 18px 0 30px;
+        border-bottom: 3px solid @white;
+        position: relative;
+
+        .section-title {
+            display: block;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        img {
+            width: 90%;
+            max-width: 486px;
+
+            margin: auto;
+            display: block;
+        }
+
+        table {
+            margin: 19px auto 0;
+
+            td {
+                vertical-align: middle;
+            }
+        }
+
+        .red {
+            background-color: @red;
+        }
+        .blue {
+            background-color: @blue;
+        }
+        .green {
+            background-color: @green;
+        }
+        .yellow {
+            background-color: @yellow;
+        }
+        .grey {
+            background-color: @grey;
+        }
+    }
+
+    .chart-color {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 6px 12px 6px 0;
+    }
+
+    .working {
+        position: relative;
+        padding: 18px 0 120px;
+
+        .section-title {
+            display: block;
+            text-align: center;
+            margin-bottom: 62px;
+        }
+
+        .large-light {
+            display: none;
+            width: 324px;
+            height: 268px;
+            position: absolute;
+            right: 0;
+            top: 190px;
+        }
+
+        .large-light:after {
+            content: '';
+            display: block;
+            width: 324px;
+            height: 268px;
+
+            background: url("../img/icons.png") no-repeat -634px -35px;
+            position: absolute;
+        }
+
+        p {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 520px){
+    table.who-I-am.mobile {
+        display: table;
+    }
+
+    table.who-I-am.desktop {
+        display: none;
+    }
+}
+
+
+/***************************************************************
+*   Tablet
+****************************************************************/
+
+@media (min-width: 512px) and (max-width: 1281px){
+
+    #about-page {
+
+        .page-wrapper {
+            background: linear-gradient(to bottom, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 18%);
+            background: -webkit-linear-gradient(top, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 18%);
+        }
+
+        .section-title {
+
+            font-size: 40px;
+        }
+
+        table.who-I-am.desktop {
+
+            width: 80%;
+            font-size: 22px;
+
+            td {
+                position: relative;
+            }
+
+            td.raleway {
+                padding: 0;
+            }
+
+            .light-bulb {
+                display: block;
+                width: 62px;
+                height: 50px;
+                position: relative;
+                float: left;
+                margin-right: 20px;
+                top: -5px;
+            }
+            .light-bulb.light-on:before {
+                width: 62px;
+                height: 50px;
+                content: '';
+                background: url('../img/icons.png') no-repeat -23px -274px;
+                position: absolute;
+                left: 23px;
+            }
+            .light-bulb.light-off:before {
+                width: 62px;
+                height: 50px;
+                content: '';
+                background: url('../img/icons.png') no-repeat -110px -274px;
+                position: absolute;
+                left: 32px;
+            }
+        }
+        .weapons-section.mobile {
+
+            display: none;
+        }
+        .weapons-section.desktop {
+
+            display: block;
+            text-align: center;
+            font-family: @archivo;
+            border-bottom: 3px solid @white;
+        }
+
+        .time-section {
+            height: 720px;
+            padding: 40px 0 30px;
+            border-bottom: 3px solid @white;
+            position: relative;
+
+            .section-title {
+                display: block;
+                text-align: center;
+                margin-bottom: 60px;
+            }
+
+            img {
+                width: 44%;
+                max-width: 486px;
+                position: absolute;
+                left: 0;
+            }
+
+            table {
+                margin-top: 94px;
+                position: absolute;
+                right: 0;
+
+                td {
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .working {
+            padding: 44px 0 120px;
+
+            .large-light {
+                display: block;
+                width: 324px;
+                height: 268px;
+                position: absolute;
+                right: 0;
+                top: 190px;
+            }
+
+            p {
+                width: 64%;
+            }
+        }
+    }
+}
+@media (min-width: 1081px) and (max-width: 1281px){
+    table.who-I-am.mobile {
+        display: none;
+    }
+
+    table.who-I-am.desktop {
+        display: table;
+    }
+}
+@media (min-width: 512px) and (max-width: 1080px){
+    table.who-I-am.mobile {
+        display: table;
+    }
+
+    table.who-I-am.desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1281px){
+
+    .weapons-section table{
+        width: 85%;
+        margin: 30px auto 15px;
+
+        img {
+            width: 90%;
+            max-width: 166px;
+            max-height: 166px;
+        }
+
+        .weapons-name {
+            width: 20%;
+            padding-bottom: 30px;
+        }
+
+        span {
+            font-size: 22px;
+        }
+    }
+}
+
+
+@media (min-width: 661px) and (max-width: 900px){
+
+    .weapons-section table{
+        width: 85%;
+        margin: 30px auto 15px;
+
+        img {
+            width: 90%;
+            max-width: 166px;
+            max-height: 166px;
+        }
+
+        .weapons-name {
+            width: 20%;
+            min-width: 120px;
+            padding-bottom: 30px;
+        }
+
+        img {
+            width: 75%;
+        }
+        span {
+            font-size: 19px;
+        }
+    }
+}
+
+@media (min-width: 512px) and (max-width: 660px){
+
+    .weapons-section table {
+        width: 100%;
+        margin: 30px auto 15px;
+
+        img {
+            width: 90%;
+            max-width: 166px;
+            max-height: 166px;
+        }
+
+        .weapons-name {
+            width: 20%;
+            padding-bottom: 30px;
+
+            span {
+                font-family: @raleway;
+                font-size: 16px;
+            }
+        }
+
+        img {
+            width: 75%;
+        }
+    }
+}
+
+/***************************************************************
+*   Desktop
+****************************************************************/
+
+@media (min-width: 1281px){
+
+    #about-page {
+
+        header {
+            background: url("../img/about_large.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        .page-content {
+            padding-top: 0;
+            top: 175px;
+        }
+
+        .page-wrapper {
+            background: linear-gradient(to bottom, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 18%);
+            background: -webkit-linear-gradient(top, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 18%);
+        }
+
+        .content-page header h1, .section-title {
+
+            font-size: 40px;
+        }
+        table.who-I-am.mobile {
+            display: none;
+        }
+        table.who-I-am.desktop {
+
+            td.raleway {
+                padding: 0;
+            }
+        }
+        .weapons-section.mobile {
+
+            display: none;
+        }
+        .weapons-section.desktop {
+            width: 100%;
+            display: block;
+            text-align: center;
+            font-family: @archivo;
+            border-bottom: 3px solid @white;
+
+            table {
+                display: table;
+                text-align: center;
+                margin: 45px auto;
+            }
+
+            td {
+                width: 166px;
+
+                img {
+                    margin: 0 15px;
+                }
+            }
+        }
+
+        .time-section {
+            height: 720px;
+            padding: 40px 0 30px;
+            border-bottom: 3px solid @white;
+            position: relative;
+
+            .section-title {
+                display: block;
+                text-align: center;
+                margin-bottom: 60px;
+            }
+
+            img {
+                width: 44%;
+                max-width: 486px;
+                position: absolute;
+                left: 0;
+            }
+
+            table {
+                margin-top: 94px;
+                position: absolute;
+                right: 0;
+
+                td {
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .working {
+            padding: 44px 0 120px;
+
+            .large-light {
+                display: block;
+                width: 324px;
+                height: 268px;
+                position: absolute;
+                right: 0;
+                top: 190px;
+            }
+
+            p {
+                width: 64%;
+            }
+        }
     }
 }
 
