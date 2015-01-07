@@ -150,8 +150,9 @@ $(function(){
                     });
 
 
-                    //Checks to see if the screen is bigger than the desktop media query
+                    //Desktop Check
                     if(screenWidth >= 1282){
+                        console.log('desktop');
                         $(activePage).find('.page-wrapper').animate({
                             opacity: 1
                         });
@@ -175,21 +176,57 @@ $(function(){
                         });
                     }
 
-                    //Checks to see if the screen is smaller than the desktop media query
-                    if(screenWidth < 1282){
+                    //Tablet Check
+                    if(screenWidth < 1282 && screenWidth > 512){
+                        console.log('tablet');
                         $(activePage).find('.page-wrapper').css({
                             opacity: 1,
                             top: 0
                         });
 
                         //Places the page text below the header quote author
-                        $(pageContent).css({
-                            top: pageHeader.height() - 68
-                        });
 
                         //Page text moves up and fades in
                         $(pageContent).css({
-                            opacity: 1
+                            opacity: 1,
+                            top: 130,
+                            paddingTop: 0
+                        });
+
+                        $(pageWrapper).css({
+                            top: pageHeader.height() - 68
+                        });
+
+                        //Header text gets a higher z-index so it stays above the gradient
+                        $(headerText).css({
+                            zIndex: 100
+                        });
+                        $(headerBottom).css({
+                            zIndex: 100
+                        });
+                        //Hides my name
+                        $('.myName').css({
+                            display: "none"
+                        });
+                        $('.myJob').css({
+                            display: "none"
+                        })
+                    }
+
+                    //Mobile Check
+                    if(screenWidth <= 512){
+                        console.log('mobile');
+                        $(activePage).find('.page-wrapper').css({
+                            opacity: 1,
+                            top: 0
+                        });
+
+                        //Places the page text below the header quote author
+                        //Page text moves up and fades in
+                        $(pageContent).css({
+                            opacity: 1,
+                            top: 160,
+                            paddingTop: 0
                         });
 
                         $(pageWrapper).css({

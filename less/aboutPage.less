@@ -45,8 +45,8 @@
     }
 
     .page-wrapper {
-        background: linear-gradient(to bottom, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 23%);
-        background: -webkit-linear-gradient(top, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 23%);
+        background: linear-gradient(to bottom, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 19%);
+        background: -webkit-linear-gradient(top, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 19%);
     }
 
     .page-content {
@@ -292,8 +292,8 @@
     #about-page {
 
         .page-wrapper {
-            background: linear-gradient(to bottom, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 18%);
-            background: -webkit-linear-gradient(top, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 18%);
+            background: linear-gradient(to bottom, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 15%);
+            background: -webkit-linear-gradient(top, rgba(219,127,36,0) 0%,rgba(219,127,36,1) 15%);
         }
 
         .section-title {
@@ -365,16 +365,15 @@
             }
 
             img {
-                width: 44%;
                 max-width: 486px;
                 position: absolute;
-                left: 0;
+                left: 7%;
             }
 
             table {
                 margin-top: 94px;
                 position: absolute;
-                right: 0;
+                right: 7%;
 
                 td {
                     vertical-align: middle;
@@ -390,7 +389,7 @@
                 width: 324px;
                 height: 268px;
                 position: absolute;
-                right: 0;
+                right: 7%;
                 top: 190px;
             }
 
@@ -408,6 +407,16 @@
     table.who-I-am.desktop {
         display: table;
     }
+
+    #about-page {
+
+        .time-section {
+
+            img {
+                width: 44%;
+            }
+        }
+    }
 }
 @media (min-width: 512px) and (max-width: 1080px){
     table.who-I-am.mobile {
@@ -416,6 +425,30 @@
 
     table.who-I-am.desktop {
         display: none;
+    }
+
+    #about-page {
+
+        .time-section {
+
+            height: 550px;
+
+            img {
+                width: 30%;
+            }
+
+            table {
+                margin-top: 30px;
+            }
+        }
+
+        .working {
+
+            .large-light:after {
+                background: url('../img/working.png') no-repeat 0 0;
+                background-size: 75%;
+            }
+        }
     }
 }
 
@@ -468,6 +501,34 @@
             font-size: 19px;
         }
     }
+
+    #about-page {
+
+        .time-section {
+
+            font-size: 19px;
+
+            img {
+                top: 200px
+            }
+        }
+
+        .working {
+            p {
+                width: auto;
+            }
+            .large-light {
+                position: static;
+                margin: auto;
+                width: 12%;
+                height: 50px;
+            }
+
+            .large-light:after {
+                background-size: 35%;
+            }
+        }
+    }
 }
 
 @media (min-width: 512px) and (max-width: 660px){
@@ -494,6 +555,36 @@
 
         img {
             width: 75%;
+        }
+    }
+
+    #about-page {
+
+        .time-section {
+            height: 820px;
+
+
+            img {
+                width: 50%;
+                margin: auto;
+                display: block;
+                position: static;
+            }
+
+            table {
+                margin: 37px auto 0;
+                font-size: 18px;
+                position: static;
+            }
+        }
+
+        .working {
+            p {
+                width: auto;
+            }
+            .large-light {
+                display: none;
+            }
         }
     }
 }
