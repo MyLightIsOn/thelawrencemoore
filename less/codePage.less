@@ -27,6 +27,143 @@
     }
 }
 
+/***************************************************************
+*   Mobile
+****************************************************************/
+
+#code-page {
+    background-color: @blue;
+
+    header {
+        background: url("../img/code_small.jpg") no-repeat center;
+        background-size: cover;
+    }
+
+    .intro-text {
+        padding-top: 40px;
+    }
+
+    .page-wrapper {
+        background: linear-gradient(to bottom, rgba(26,114,135,0) 0%,rgba(26,114,135,1) 19%);
+        background: -webkit-linear-gradient(top, rgba(26,114,135,0) 0%,rgba(26,114,135,1) 19%);
+    }
+
+    .page-content {
+        background-color: @blue;
+        padding-bottom: 60px;
+    }
+
+    .example {
+
+        .example-title {
+            font-size: 19px;
+        }
+
+        .image-container {
+            margin-right: 26px;
+        }
+
+        .view {
+            width: 97%;
+            background-color: @green;
+            max-width: 265px;
+            margin: 0 auto;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            border-radius: 33px;
+            font-size: 22px;
+        }
+
+        .live {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+/***************************************************************
+*   Tablet
+****************************************************************/
+
+@media (min-width: 512px) and (max-width: 1281px){
+    #code-page {
+
+        .page-wrapper {
+            background: linear-gradient(to bottom, rgba(26,114,135,0) 0%,rgba(26,114,135,1) 13%);
+            background: -webkit-linear-gradient(top, rgba(26,114,135,0) 0%,rgba(26,114,135,1) 13%);
+        }
+
+        .example {
+
+            .example-title {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+/***************************************************************
+*   Desktop
+****************************************************************/
+
+@media (min-width: 1282px){
+    #code-page {
+
+        header {
+            background: url("../img/code_large.jpg") no-repeat center;
+            background-size: cover;
+        }
+
+        .page-wrapper {
+            background: linear-gradient(to bottom, rgba(26,114,135,0) 0%,rgba(26,114,135,1) 13%);
+            background: -webkit-linear-gradient(top, rgba(26,114,135,0) 0%,rgba(26,114,135,1) 13%);
+        }
+
+        .page-content {
+            padding-top: 0;
+        }
+
+        .example {
+
+            .example-title {
+                font-size: 22px;
+            }
+
+            .view {
+                display: inline;
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1281px) and (max-width: 1429px){
+        #code-page {
+
+            .page-content {
+                top: 355px;
+            }
+        }
+}
+
+@media (min-width: 1430px) and (max-width: 1569px){
+    #code-page {
+
+        .page-content {
+            top: 269px;
+        }
+    }
+}
+
+@media (min-width: 1570px) {
+    #code-page {
+
+        .page-content {
+            top: 200px;
+        }
+    }
+}
+
 /*#code-page {
     background-color: @blue;
 

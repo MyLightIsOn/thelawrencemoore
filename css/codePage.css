@@ -26,6 +26,97 @@ z-index
     top: 48px;
   }
 }
+/***************************************************************
+*   Mobile
+****************************************************************/
+#code-page {
+  background-color: #1a7287;
+}
+#code-page header {
+  background: url("../img/code_small.jpg") no-repeat center;
+  background-size: cover;
+}
+#code-page .intro-text {
+  padding-top: 40px;
+}
+#code-page .page-wrapper {
+  background: linear-gradient(to bottom, rgba(26, 114, 135, 0) 0%, #1a7287 19%);
+  background: -webkit-linear-gradient(top, rgba(26, 114, 135, 0) 0%, #1a7287 19%);
+}
+#code-page .page-content {
+  background-color: #1a7287;
+  padding-bottom: 60px;
+}
+#code-page .example .example-title {
+  font-size: 19px;
+}
+#code-page .example .image-container {
+  margin-right: 26px;
+}
+#code-page .example .view {
+  width: 97%;
+  background-color: #1ba33f;
+  max-width: 265px;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 33px;
+  font-size: 22px;
+}
+#code-page .example .live {
+  margin-bottom: 30px;
+}
+/***************************************************************
+*   Tablet
+****************************************************************/
+@media (min-width: 512px) and (max-width: 1281px) {
+  #code-page .page-wrapper {
+    background: linear-gradient(to bottom, rgba(26, 114, 135, 0) 0%, #1a7287 13%);
+    background: -webkit-linear-gradient(top, rgba(26, 114, 135, 0) 0%, #1a7287 13%);
+  }
+  #code-page .example .example-title {
+    font-size: 22px;
+  }
+}
+/***************************************************************
+*   Desktop
+****************************************************************/
+@media (min-width: 1282px) {
+  #code-page header {
+    background: url("../img/code_large.jpg") no-repeat center;
+    background-size: cover;
+  }
+  #code-page .page-wrapper {
+    background: linear-gradient(to bottom, rgba(26, 114, 135, 0) 0%, #1a7287 13%);
+    background: -webkit-linear-gradient(top, rgba(26, 114, 135, 0) 0%, #1a7287 13%);
+  }
+  #code-page .page-content {
+    padding-top: 0;
+  }
+  #code-page .example .example-title {
+    font-size: 22px;
+  }
+  #code-page .example .view {
+    display: inline;
+    margin-right: 30px;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1429px) {
+  #code-page .page-content {
+    top: 355px;
+  }
+}
+@media (min-width: 1430px) and (max-width: 1569px) {
+  #code-page .page-content {
+    top: 269px;
+  }
+}
+@media (min-width: 1570px) {
+  #code-page .page-content {
+    top: 200px;
+  }
+}
 /*#code-page {
     background-color: @blue;
 
