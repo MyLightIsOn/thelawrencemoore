@@ -47,7 +47,7 @@ module.exports = function(grunt) {
         ,
         cssmin: {
             css:{
-                src: 'css/main.css',
+                src: ['css/global.css', 'css/home.css','css/aboutPage.css','css/contactPage.css','css/designPage.css','css/codePage.css', 'css/jquery.swipeshow.css', 'css/slideshow-theme.css'],
                 dest: 'css/main.min.css'
             }
         },

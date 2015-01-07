@@ -24,7 +24,6 @@ z-index
   right: inherit;
   background-color: #ffffff;
   border: 1px solid #c0c0c0;
-  will-change: width, height;
 }
 .tile-background {
   height: 100%;
@@ -129,64 +128,76 @@ z-index
 .contact .tile-background {
   background-color: #db3a24;
 }
-@media (min-width: 1282px) {
-  .icon {
-    width: 92px;
-    height: 92px;
-    border-radius: 46px;
-  }
-  .icon:after {
-    width: 63px;
-    height: 63px;
-    top: 10px;
-    left: 10px;
-  }
-  .about {
-    top: 0;
-    left: 0;
-  }
-  .about .icon {
-    background: url("../img/icons.png") -189px 1px no-repeat;
-    background-size: 751px;
-  }
-  .about .icon-on {
-    background: url("../img/icons.png") -189px -93px no-repeat;
-    background-size: 751px;
-  }
-  .code {
-    bottom: 0;
-    left: 0;
-  }
-  .code .icon {
-    background: url("../img/icons.png") -275px 1px no-repeat;
-    background-size: 751px;
-  }
-  .code .icon-on {
-    background: url("../img/icons.png") -275px -93px no-repeat;
-    background-size: 751px;
-  }
-  .design {
-    top: 0;
-    right: 0;
-  }
-  .design .icon {
-    background: url("../img/icons.png") 2px 4px no-repeat;
-    background-size: 686px;
-  }
-  .design .icon-on {
-    background: url("../img/icons.png") 2px -83px no-repeat;
-    background-size: 686px;
-  }
-  .contact {
-    bottom: 0;
-    right: 0;
-  }
-  .contact .icon {
-    background: url("../img/icons.png") -86px 5px no-repeat;
-    background-size: 686px;
-  }
-  .contact .icon-on {
-    background: url("../img/icons.png") -87px -80px no-repeat;
-    background-size: 686px;
-  }
-}
+/*@media (min-width: 1282px) {
+
+    .icon {
+        width: 92px;
+        height: 92px;
+
+        border-radius: 46px;
+    }
+
+    .icon:after {
+        width: 63px;
+        height: 63px;
+        top: 10px;
+        left: 10px;
+    }
+    .about {
+        top: 0;
+        left: 0;
+
+        .icon {
+            background: url("../img/icons.png") -189px 1px no-repeat;
+            background-size: 751px;
+        }
+
+        .icon-on {
+            background: url("../img/icons.png") -189px -93px no-repeat;
+            background-size: 751px;
+        }
+    }
+
+    .code {
+        bottom: 0;
+        left: 0;
+
+        .icon {
+            background: url("../img/icons.png") -275px 1px no-repeat;
+            background-size: 751px;
+        }
+
+        .icon-on {
+            background: url("../img/icons.png") -275px -93px no-repeat;
+            background-size: 751px;
+        }
+    }
+
+    .design {
+        top: 0;
+        right: 0;
+
+        .icon {
+            background: url("../img/icons.png") 2px 4px no-repeat;
+            background-size: 686px;
+        }
+        .icon-on {
+            background: url("../img/icons.png") 2px -83px no-repeat;
+            background-size: 686px;
+        }
+    }
+
+    .contact {
+        bottom: 0;
+        right: 0;
+
+        .icon {
+            background: url("../img/icons.png") -86px 5px no-repeat;
+            background-size: 686px;
+        }
+        .icon-on {
+            background: url("../img/icons.png") -87px -80px no-repeat;
+            background-size: 686px;
+        }
+    }
+}*/

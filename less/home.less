@@ -23,6 +23,12 @@
     border: 1px solid @grey;
 }
 
+.tile-background {
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
 .icon {
     width: 80px;
     height: 80px;
@@ -30,10 +36,6 @@
 
     border-radius: 40px;
     position: relative;
-}
-
-.icon-on {
-
 }
 
 .icon-container {
@@ -44,6 +46,7 @@
     top: 50%;
     transform: translateY(-50%);
 
+    background-color: @white;
     border: solid 4px @grey;
     border-radius: 50px;
 }
@@ -61,6 +64,14 @@
         background: url("../img/icons.png") -189px -78px no-repeat;
         background-size: 751px;
     }
+
+    .tile-expand {
+        background: url("../img/about_large.jpg") no-repeat;
+        background-size: cover;
+    }
+    .tile-background {
+        background-color: #db7f24;
+    }
 }
 
 .code {
@@ -77,6 +88,14 @@
         background: url("../img/icons.png") -275px -81px no-repeat;
         background-size: 751px;
     }
+
+    .tile-expand {
+        background: url("../img/code_large.jpg") no-repeat;
+        background-size: cover;
+    }
+    .tile-background {
+        background-color: #1a7287;
+    }
 }
 
 .design {
@@ -91,6 +110,14 @@
         height: 100px;
         background: url("../img/icons.png") 2px -68px no-repeat;
         background-size: 686px;
+    }
+
+    .tile-expand {
+        background: url("../img/design_large.jpg") no-repeat;
+        background-size: cover;
+    }
+    .tile-background {
+        background-color: #1ba33f;
     }
 }
 
@@ -107,12 +134,20 @@
         background: url("../img/icons.png") -87px -67px no-repeat;
         background-size: 686px;
     }
+
+    .tile-expand {
+        background: url("../img/contact_large.jpg") no-repeat;
+        background-size: cover;
+    }
+    .tile-background {
+        background-color: #db3a24;
+    }
 }
 
 
 
 
-@media (min-width: 1282px) {
+/*@media (min-width: 1282px) {
 
     .icon {
         width: 92px;
@@ -184,4 +219,5 @@
             background-size: 686px;
         }
     }
-}
+}*/
+
